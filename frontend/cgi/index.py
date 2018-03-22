@@ -15,17 +15,12 @@ html += '</head>'
 html += '<body>'
 html += "<p>Thanks for visiting our page  "'<b>' +name+ '</b>'"<p></br>"
 if query_type == 'gene':
-    html += "<a href='http://localhost/project/gene.html'>gene Information</a>"
+    html += "<a href='http://localhost/project/chrom12/frontend/html/gene.html'>gene Information</a>"
 elif query_type == 'protein':
-    html += "<a href='http://localhost/project/protein.html'>Protein Information</a>"
+    html += "<a href='http://localhost/project/chrom12/frontend/html/protein.html'>Protein Information</a>"
 else:
-    html += "<a href='http://localhost/project/re.html'>RE</a>"
+    html += "<a href='http://localhost/project/chrom12/frontend/html/re.html'>RE</a>"
 
 html += '</body>'
 html += '</html>'
 print(html)
-
-
-'''choice = cgi.getlist('dropdown')
-for choice in dropdown:
-    if choice == 'gene':'''

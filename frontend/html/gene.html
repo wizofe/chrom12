@@ -4,17 +4,19 @@
   <title>gene information</title>
 </head>
   <body>
-    <form action='http://localhost/cgi-bin/index.py' id='gene_serch' method='post'>
-      Firstname:<input type="text" name="fname">
-      <input type ='submit'>
-    </form>
-      <select name = 'gene_serch' form='gene_serch'>
+    <form action='http://localhost/cgi-bin/result.py' id='gene_search' method='post'>
+      Firstname:<input type="text" name="name">
+
+      <select name = 'gene_search' form='gene_search'>
         <option value='gene_id' >gene_id</option>
         <option value='accs_num'>accs_num</option>
         <option value='query_seq'>seq</option>
         <option value='gene_name'>gene_name</option>
       </select>
+      <input type='text' name='query'>
 
+      <input type ='submit'>
+    </form>
   </body>
 </html>
 <!--<image src='chromosome.jpg'>-->
