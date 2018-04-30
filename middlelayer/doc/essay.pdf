@@ -1,0 +1,26 @@
+
+    Explain how you set about the project detailing:
+        how you interacted with the other members of the group
+        how you (as a group) came up with the requirements for the overall project
+        how you (as an individual) came up with the requirements for your contribution
+    How well did the development cycle work within the group?
+    You should document the development process - what stages did you go through and what steps did you take? Did you go through several iterations or did you spend a long time in design and then a relatively short development stage?
+    What strategies (if any) did you take for testing your code - particularly if other people's code wasn't ready?
+    Are there any known issues or bugs, or anything that doesn't work as specified?
+    You should discuss what worked well and what could have worked better - both with your code and the group interaction. Were there any particular problems? Conversely were there any solutions or ideas that you were particularly proud of?
+    Were there alternative strategies you could have used? (Either for the project design or implementation)
+    What do you think you gained out of the project? How has this experience helped you? What experience or insights have you gained?
+
+Consequently I suggest headings of the form:
+
+    Approach to the project
+        Interaction with the team
+        Overall project requirements
+        Requirements for my contribution
+    Performance of the development cycle
+    The development process
+    Code testing
+    Known issues
+    What worked and what didn't - problems and solutions
+    Alternative strategies
+    Personal insights
