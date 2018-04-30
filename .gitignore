@@ -1,5 +1,6 @@
 .venv/*
 .idea/*
 venv/*
-
+*~
+chrom_CDS_18
 
