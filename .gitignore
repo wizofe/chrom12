@@ -3,4 +3,5 @@
 venv/*
 *~
 chrom_CDS_18
+.git/*
 
