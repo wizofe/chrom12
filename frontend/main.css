@@ -1,0 +1,10 @@
+
+body{
+  color:#660099;
+  text-align: center;
+  background-size:cover;
+  background-color: rgba(255,255,255,0.7);
+  background-blend-mode: lighten;
+  background-image: url(chromo1.jpg);
+  background-repeat: no-repeat;
+  }

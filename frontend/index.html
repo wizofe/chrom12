@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chrom12 information</title>
+  <link rel ="stylesheet" type="text/css" href = "main.css">
+</head>
+<body>
+<h1>Information About Chromosome 12</h1>
+    <p> Our aim is to provide informton regarding Chromosome-12 of Homosapiens. </br>
+        You can search for genes, proteins and restriction enzyme(RE) on this page</p>
+    <p> you click on the <a href=summary.html> summary</a> to view summry regarding chrosome-12 or you can serch using the gene_id,accs_num or protein product name</p>
+
+<form action='http://localhost/cgi-bin/result.py'
+    method="post">
+    <p><b>Name:<b><br/></br>
+    <input name='name' type='text' placeholder="Full-name" size ='49'/></p></br>
+    <p><b> Query type:</b></br></br>
+    <input type = 'radio' name= 'query_type' value='gene' checked= 'checked' >Genes</br>
+    <input type = 'radio' name= 'query_type' value='protein' >Protein</br>
+    <input type = 'radio' name= 'query_type' value='re'>RE</br></br>
+    <select name = 'search'>
+    <option value='gene_id' >gene_id</option>
+    <option value='accs_num'>accs_num</option>
+    <option value='query_seq'>seq</option>
+    <option value='key_word'>key_word</option>
+    </select>
+    <input type='text' name='query'>
+    <input type = 'submit' value = 'Submit'>&nbsp&nbsp&nbsp&nbsp
+    <input type = 'reset'  value = 'Clear form'>
+</form>
+</body>
+</html>
