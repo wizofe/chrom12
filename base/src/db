@@ -1,0 +1,171 @@
+LOCUS       AB000905                1293 bp    DNA     linear   PRI 05-FEB-1999
+DEFINITION  Homo sapiens DNA for H4 histone, complete cds.
+ACCESSION   AB000905
+VERSION     AB000905.1  GI:1840406
+KEYWORDS    H4 histone.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 1293)
+  AUTHORS   Akasaka,T., Miura,I., Takahashi,N., Akasaka,H., Yonetani,N.,
+            Ohno,H., Fukuhara,S. and Okuma,M.
+  TITLE     A recurring translocation, t(3;6)(q27;p21), in non-Hodgkin's
+            lymphoma results in replacement of the 5' regulatory region of BCL6
+            with a novel H4 histone gene
+  JOURNAL   Cancer Res. 57 (1), 7-12 (1997)
+   PUBMED   8988030
+REFERENCE   2  (bases 1 to 1293)
+  AUTHORS   Ohno,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-FEB-1997) Hitoshi Ohno, Kyoto University, The First
+            Division, Department of Internal Medicine, Faculty of Medicine; 54
+            Shogoin-Kawaramachi, Sakyo-ku, Kyoto, Kyoto 606-01, Japan
+            (E-mail:ohnohito-kyt@umin.u-tokyo.ac.jp, Tel:+81-75-751-4293,
+            Fax:+81-75-751-3201)
+FEATURES             Location/Qualifiers
+     source          1..1293
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="6"
+                     /map="6p21.3"
+                     /cell_type="B cell lymphocyte"
+     CDS             721..1032
+                     /codon_start=1
+                     /product="H4 histone"
+                     /protein_id="BAA19208.1"
+                     /db_xref="GI:1840407"
+                     /translation="MSGRGKGGKGLGKGGAKRHRKVLRDNIQGITKPAIRRLARRGGV
+                     KRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTAMDVVYALKRQGRTLYGFG
+                     G"
+ORIGIN      
+        1 ctgcagtaga taatgaggta accgaaggca attgtgcttc ttttgataag aagctttctt
+       61 ggtcatatca ggaaattcca gagaaagtcc ctccctgtat ttggggaaga gaaacaggac
+      121 aaagttagag ggaccttgat tcttagactt gtttctgaga accctcaatt ttcaaaaaca
+      181 cccaccatta ccaagctcga tatttggggg gataattctc caccccaaac actagaaatg
+      241 aaaataagta gaaaagaact tagcaatata cctgaacgat ctttaaattc tatgagtcta
+      301 tcttgttcta ttgctaggaa tttagcatat ggagtatatt tccattgtat attaaggaga
+      361 aaaatgccac aaaatagcat agttccatac aaataatgtt aaaggaaaac atgcatatat
+      421 gcagagataa cattcttttt gctttatgta tcttctataa tgttaacatt tttgttatga
+      481 ggcaggaatc atgttaaatg aaaaaaggaa aaacagccta ggtcttgagg attaaaaagg
+      541 actgaaggag aacaagaggg agtagagcac agcaggcctg tttccctttt aggtcccctc
+      601 ccccaatgca gagggacttc cgccaaagct cttccggttt tcagtctggt ccgcagaggt
+      661 tacccataaa agaaagctgc catcacaggc agcagacctt tgttctctga ccacttgata
+      721 atgtcaggac gcggcaaagg aggtaagggc ctggggaaag ggggtgccaa gcgccaccgc
+      781 aaggtgctgc gcgacaacat ccagggtatc accaagccag ccattcggcg ccttgctcgc
+      841 cgcggcggcg tgaagcgcat ttctggcctc atctatgagg agacccgcgg agtgttgaag
+      901 gtgttcctgg agaacgtgat ccgggacgcc gtgacctaca cggagcacgc caagcgcaag
+      961 acggtcaccg ccatggacgt ggtctacgcg ctcaagcgcc agggccgcac cctctatggc
+     1021 ttcggcggct aaatggcatt ttgaagccca gtcattctct aaaaaggccc tttttagggc
+     1081 ccctaagctt tcaacaaaag agttgaaatg actccaaact gagtctctta atagggccat
+     1141 tgtcagtgag ttctgtcatc ctattttaca agattaactc gacgccgaaa atgggctgat
+     1201 gactacaggt gaccttgggc cgagattttt ccaaggccag aagagcctct gctggccagt
+     1261 aacttctggc ggctgcctgg aaattgcctg cag
+//
+LOCUS       AB003609                1573 bp    DNA     linear   PRI 19-OCT-2004
+DEFINITION  Homo sapiens MICB01021 gene for MICB, partial cds.
+ACCESSION   AB003609 AB003599
+VERSION     AB003609.2  GI:60391355
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Ando,H., Mizuki,N., Ota,M., Yamazaki,M., Ohno,S., Goto,K.,
+            Miyata,Y., Wakisaka,K., Bahram,S. and Inoko,H.
+  TITLE     Allelic variants of the human MHC class I chain-related B gene
+            (MICB)
+  JOURNAL   Immunogenetics 46 (6), 499-508 (1997)
+   PUBMED   9321430
+REFERENCE   2  (bases 1 to 1573)
+  AUTHORS   Ando,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-MAY-1997) Hitoshi Ando, Japanese Red Cross, Kanagawa
+            Shonan Blood Center, Section of Technology; 1837 Aiko, Atsugi,
+            Kanagawa 243, Japan (Tel:0462-28-9800(ex.345), Fax:0462-28-0310)
+COMMENT     On or before Mar 1, 2005 this sequence version replaced gi:2626841,
+            gi:2626842.
+FEATURES             Location/Qualifiers
+     source          1..1573
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="6"
+                     /map="6p21.3"
+     intron          <1..60
+                     /number=1
+     gene            <61..>1546
+                     /gene="MICB01021"
+     CDS             join(<61..315,587..874,1037..1315,1415..>1546)
+                     /gene="MICB01021"
+                     /codon_start=3
+                     /product="MICB"
+                     /protein_id="BAA23476.1"
+                     /db_xref="GI:2626844"
+                     /translation="PHSLRYNLMVLSQDGSVQSGFLAEGHLDGQPFLRYDRQKRRAKP
+                     QGQWAEDVLGAKTWDTETEDLTENGQDLRRTLTHIKDQKGGLHSLQEIRVCEIHEDSS
+                     TRGSRHFYYDGELFLSQNLETQESTVPQSSRAQTLAMNVTNFWKEDAMKTKTHYRAMQ
+                     ADCLQKLQRYLKSGVAIRRTVPPMVNVTCSEVSEGNITVTCRASSFYPRNITLTWRQD
+                     GVSLSHNTQQWGDVLPDGNGTYQTWVATRIRQGEEQRFTCYMEHSGNHGTHPVPSGKA
+                     LVLQSQRTDFPYVSAAMPCFVIIIILCVPCCKKKTSAAEGP"
+     exon            61..315
+                     /gene="MICB01021"
+                     /number=2
+     intron          316..586
+                     /gene="MICB01021"
+                     /number=2
+     exon            587..874
+                     /gene="MICB01021"
+                     /number=3
+     intron          875..>890
+                     /gene="MICB01021"
+                     /number=3
+     gap             891..990
+                     /estimated_length=unknown
+     intron          <991..1036
+                     /gene="MICB01021"
+                     /number=3
+     exon            1037..1315
+                     /gene="MICB01021"
+                     /number=4
+     intron          1316..1414
+                     /gene="MICB01021"
+                     /number=4
+     exon            1415..1546
+                     /gene="MICB01021"
+                     /number=5
+     intron          1547..>1573
+                     /number=5
+ORIGIN      
+        1 aaacatcaat gtgaagttat ttccaggaag aagtttcacc tgtgatttcc tcttccccag
+       61 agccccacag tcttcgttac aacctcatgg tgctgtccca ggatggatct gtgcagtcag
+      121 ggtttctcgc tgagggacat ctggatggtc agcccttcct gcgctatgac aggcagaaac
+      181 gcagggcaaa gccccaggga cagtgggcag aagatgtcct gggagctaag acctgggaca
+      241 cagagaccga ggacttgaca gagaatgggc aagacctcag gaggaccctg actcatatca
+      301 aggaccagaa aggaggtgag agtcggcagg ggcaagagta atgggaggcc ttctccagga
+      361 aagttggaga cagagagcag ggacctgtct cttcccgctg gatctggctg ggggtgggga
+      421 tgaggaatag ggtcagggag gctcagcagg gtggtgagcc ggaactcagc ccacacaggg
+      481 aggcatggag gagggccagg gaggggtcgc cgctgggctg agttcctcac ttgggtggaa
+      541 aggtgatggg ttcgggaatg gagaagtcac tgctgggtgg gggcaggctt gcattccctc
+      601 caggagatta gggtctgtga gatccatgaa gacagcagca ccaggggctc ccggcatttc
+      661 tactacgatg gggagctctt cctctcccaa aacctggaga ctcaagaatc gacagtgccc
+      721 cagtcctcca gagctcagac cttggctatg aacgtcacaa atttctggaa ggaagatgcc
+      781 atgaagacca agacacacta tcgcgctatg caggcagact gcctgcagaa actacagcga
+      841 tatctgaaat ccggggtggc catcaggaga acaggtaccg accctggcca nnnnnnnnnn
+      901 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      961 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn cttagagggg agcagggctt cactggctct
+     1021 gccctttctt ctccagtgcc ccccatggtg aatgtcacct gcagcgaggt ctcagagggc
+     1081 aacatcaccg tgacatgcag ggcttccagc ttctatcccc ggaatatcac actgacctgg
+     1141 cgtcaggatg gggtatcttt gagccacaac acccagcagt ggggggatgt cctgcctgat
+     1201 gggaatggaa cctaccagac ctgggtggcc accaggattc gccaaggaga ggagcagagg
+     1261 ttcacctgct acatggaaca cagcgggaat cacggcactc accctgtgcc ctctggtgag
+     1321 cctggggtga ccctggagag ggtcaggcca gggtaggaac agcagggacg gctgtggctc
+     1381 tctgcccagt gtataacaag tccctttttt tcagggaagg cgctggtgct tcagagtcaa
+     1441 cggacagact ttccatatgt ttctgctgct atgccatgtt ttgttattat tattattctc
+     1501 tgtgtccctt gttgcaagaa gaaaacatca gcggcagagg gtccaggtga gaaaagggga
+     1561 cagtttctgg aga
+//
