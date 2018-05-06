@@ -34,7 +34,7 @@ import pymysql.cursors
 
 dbserver = 'localhost'  # IP address of the MySQL database server
 dbuser = 'root'         # User name of the databaseserver
-dbpass = '1234'         # Password for the database user
+dbpass = ''         # Password for the database user
 
 newdbname = 'chromdb'   # Name of the database that is to be created
 charset = 'utf8mb4'     # Character set
