@@ -260,14 +260,15 @@ def getCDS():
 
 
 
-def getCodonUsage():
+def getCodonUsage(acno):
     
     """Fetches condon usage per entry by accession number from the database
        args: none
        return: row (tuple) with values of Amacid, Codon, Number, per1000, Fraction for the that entry
     """
     connection = dbconnection.getdbconnection()
-    sql = 'SELECT Accession_No, Amacid, Codon, Number, per1000, Fraction from CodonUsage_per_Entry'
+    sql = 'SELECT Accession_No, Amacid, Codon, Number, per1000, Fraction from CodonUsage_per_Entry' \
+          'WHERE Accession_No = "%s"' % acno
     cursor = connection.cursor()
     cursor.execute(sql)
 
