@@ -11,63 +11,125 @@ See the LICENSE.txt for licensing information
 Version 0.1b Beta ('Making it work')
 
 Todo:
-    * one
-    * two
+    * Finalise the testing
 
-For more information about the API see doc/documentation.txt
+For more information about the API see doc/docs.md
 For the essay doc/essay.pdf
 """
 
-import unittest
-import dbconnection
+from database.db_API import *
+from CUsage import *
+from AlignSequence import *
 
-class TestMainFunction(unittest.TestCase):
-    """ Tests for the main function
-    Each test is a function beginning with 'test_'
+
+def identify_coding_regions(dna):
+    """ Wrapper of the database.db_API to return the coding regions
+    of the input DNA sequence
+    Args:
+        DNA(str): The input DNA sequence
+    Return:
+        CDS(list): Coding Regions in the specified DNA sequence
     """
-    def test_identify_coding_regions_from_dna(self, dna):
-        self.assertEqual(1, 1)
-        # Given in the genbank file - return: CDS location (int)
+    return get_CDS(DNA)[4]
 
-    def test_generate_coding_sequence_from_dna(self, dna):
-        pass
-        # join the dna sequence from location return: DNA sequence (str)
+def generate_coding_sequence(dna):
+    """ Wrapper of the database.db_API to return the joined coding sequence
+    of the input DNA sequence
+    Args:
+        DNA(str): The input DNA sequence
+    Return:
+        cseq(str): DNA coding sequence
+    """
 
-    def test_align_protein_seq_with_dna_coding(self, protein_sequence, dna_coding):
-        pass
-        # get protein sequence translation (from genbank =)
-        # and align(function) with CDS return: alignment (str)
+    cseq = ""
+    for cds in len(CDS):
+        cseq.join(cds)
 
-    def test_identify_re_sites(self, dna):
-        pass
-        # argument: list of RE's, DNA ATGCG
-        # CGCATGCGACCCTTG
-        # return: location e.g. 35..39 ATCGC (re)
+    return cseq
 
-    def test_provide_re_sites_list(self, re_sites):
-        pass
-        # return a list with RE sites to FE [list of strings]
+def count_codon_usage(gene):
+    """
+    Calculates the codon usage for a specified gene
+    It can be used to calculate the usage either across a region or the whole
+    See CUsage.py for the implementation of the Class
 
-    def test_identify_re_restriction_in_coding_region(self, re_sites):
-        pass
-        # aminoacid dictionary
-        # return count usage: integer
+    Args:
+        gene(str): Gene to calculate CDS
+        codon_loc(int): The location of the codon
+    Return:
+        codon_count(float): CDS
 
-    def test_count_codon_usage_in_gene(self, dna):
-        pass
-
-    def test_calculate_codon_usage_across_all_regions(self, codon):
-        pass
-        # store in a database or text file
-        # return count usage in the CODING REGION (CDS)
-
-    def test_extract_information_from_db(self, info):
-        pass
-        # Accession Number Genbank Protein
-        # Keywords
-
-    # may be wrappers to db code
-    # complete gene list
-    # or individual information
+    """
+    cai = CodonAdaptationIndex(gene)
+    codon_loc = getCDS(gene)[2:3]
+    return cai._count_codons(codon_loc)
 
 
+def align(dna, protein, matrix, gap_penalty):
+    """ Implementation of a Waterman alignment
+    See AlignSequence module for more
+
+    Args:
+        dna(str): given dna to be aligned
+        protein(str): protein sequence to be aligned
+        matrix(list): a lookup matrix input
+        gap_penalty(int): the value of the required gap_penalty
+    Return:
+        alignment (list[list]): an array including a list of the alignments
+
+    """
+    return align_sequence(dna, protein, match_award=10, m_penalty=-5, gap_penalty=-5)
+
+def identify_re_sites(self, dna, re_sites):
+    """ Identify the restriction enzyme cut locations in the DNA
+    Args:
+        dna(str): DNA to calculate the RE cut locations
+    Return:
+        re_location(list): the location of the RE cut
+
+    """
+    start = 0
+    end = len(dna)
+    re_location = []
+    while dna.find(re_sites,start,end) != -1 :
+        x = dna.find(re_sites,start,end)
+        re_location.append(x)
+        start = x+1
+
+    return re_location
+
+
+def re_unique(dna, protein):
+    """ Generate a list of the restriction enzyme sites of the DNA
+    Args:
+        dna(str): The requested dna
+        (list): The location of the codon
+    Return:
+        found(list): unique CDS
+
+    """
+    found = None
+    site = dna.find(protein)
+
+    while site != -1:
+        if found:
+            break
+        found = site
+        site = dna.find(protein, found + 1)
+    else:
+        if found is not None:
+            return found
+
+def get_protein_info(self, protein):
+    """ Database API wrapper to get the requested info for a specific protein
+    Args:
+        protein(str): ID of a protein
+    Return:
+        ac_number(int): protein accession number
+        protein_id(int): the ID of the protein
+        protein_name(str): the name of requested protein
+        aa_seq(str): the aminoacid sequence of the requested protein
+    """
+
+    ac_number, protein_id, protein_name, aa_seq = getProinfo_name(protein)
+    return ac_number, protein_id, protein_name, aa_seq

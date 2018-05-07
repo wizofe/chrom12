@@ -30,7 +30,7 @@ V1.0   02.05.18
 #Import libraries
 
 import pymysql
-import dbconnection
+import database.dbconnection
 
 #*********************************************************************************************************
 
@@ -98,7 +98,7 @@ def insert_row(table_name, columns, values):
         cursor.execute(sql)
         connection.commit()
 
-    except pymysql.err.IntegrityError:
+    except database.dbconnection.database.dbconnection.pymysql.err.IntegrityError:
         pass
 
     connection.close()

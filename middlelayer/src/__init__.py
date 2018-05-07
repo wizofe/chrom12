@@ -1,4 +1,4 @@
-__author__ = "Ioannis Valasakis, Jenny Su and Abdulvahab Kharabi"
+__author__ = "Ioannis Valasakis"
 __copyright__ = "Copyright 2018"
 __license__ = "GPL"
 __version__ = "0.1b"
