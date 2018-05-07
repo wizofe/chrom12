@@ -105,6 +105,11 @@ def insert_row(table_name, columns, values):
 
 
 def fetch_one(table_name, select_columns, where_dict):
+    """this function is used by Genbank_parser.py to fectch information from specfic column of a table 
+    by mapping information from else where with other columns in the table.
+    return: retrieved info by row
+    """
+    
     connection = dbconnection.getdbconnection()
 
     sql = 'SELECT %s FROM %s WHERE ' % (", ".join(select_columns), table_name)
