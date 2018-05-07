@@ -1,4 +1,0 @@
-0. software installation
-1. what functions are doing
-2. API description (function(arguments) return)
-3. Data access routines (which may be provided by the database programmer or the business logic programmer) define the API provided to the business logic in such a way that another programmer could implement the business logic with reference to your document.
