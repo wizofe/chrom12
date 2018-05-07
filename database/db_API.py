@@ -30,7 +30,7 @@ V1.0   02.05.18
 #Import libraries
 
 import pymysql
-import dbconnection
+import database.dbconnection
 
 #*********************************************************************************************************
 
@@ -99,6 +99,7 @@ def insert_row(table_name, columns, values):
         connection.commit()
 
     except pymysql.err.IntegrityError:
+    except database.dbconnection.database.dbconnection.pymysql.err.IntegrityError:
         pass
 
     connection.close()
@@ -286,7 +287,7 @@ def getCodonUsage(acno):
 
 
 def getCodonUsage_chrom():
-    """Fetches codon usage information of chromosome 12 from database 
+    """Fetches condon usage information of chromosome 12 from database 
        args: none
        return: row (tuple) with values of Amacid, Codon, Number, per1000, Fraction
     """
@@ -308,5 +309,3 @@ if __name__ == "__main__":
         print(row)
 
     # print (fetch_one('Codon', ['Codon_id'], {'Codon': 'TGT', 'Amacid': 'Cys'}).get('Codon_id'))
-
-
