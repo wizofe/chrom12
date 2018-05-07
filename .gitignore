@@ -1,0 +1,10 @@
+.venv/*
+.idea/*
+venv/*
+*~
+chrom_CDS_18
+.git/*
+__pycache__/*
+venv/*
+.virtualenv/*
+.DS_Store

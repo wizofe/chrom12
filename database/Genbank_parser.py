@@ -35,6 +35,10 @@ import re
 import json
 
 import model
+import csv
+import re
+
+from database import model
 import db_API
 
 #*****************************************************************
@@ -228,7 +232,7 @@ def main(geneBank_file):
         index += 1
         codon_id = db_API.fetch_one('Codon', ['Codon_id'], {'Codon': result[1], 'Amacid': result[0]}).get('Codon_id')
         db_API.insert_row(
-            "CodonUsage_per_chrom", [x[0] for x in model.codonuage_per_chrom_columns[:-1]], [index]+result+[codon_id])
+            "CodonUsage_per_chrom", [x[0] for x in model.codonuage_per_chrom_columns[:-1]], [index] + result + [codon_id])
         # write_csvRow(codonUsageResultPerWholeChromosome_csv, result, 'a')
         
 
@@ -322,4 +326,3 @@ if __name__ == "__main__":
 
 
     main(geneBank_file)
-

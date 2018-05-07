@@ -1,7 +1,6 @@
-##Introduction
+## Introduction
 
 This is the middle layer of the `chromosome 12` coursework for the class Bioinformatics 2 in Birkbeck College.
-Written by Ioannis Valasakis <code@wizofe.uk> and licensed under the GNU General Public License v3.
+Written by the team Chromosome 12 (for more info about the authors look at the individual layers and documentation) 
+and licensed under the GNU General Public License v3. For more information look at the LICENSE documentation file.
 
-##API
-Here we define the following procedures:
