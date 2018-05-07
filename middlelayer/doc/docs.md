@@ -114,4 +114,3 @@ Return:
     protein_id(int): the ID of the protein
     protein_name(str): the name of requested protein
     aa_seq(str): the aminoacid sequence of the requested protein
-
