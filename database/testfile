@@ -169,3 +169,865 @@ ORIGIN
      1501 tgtgtccctt gttgcaagaa gaaaacatca gcggcagagg gtccaggtga gaaaagggga
      1561 cagtttctgg aga
 //
+LOCUS       AB002805                1249 bp    DNA     linear   PRI 14-APR-2000
+DEFINITION  Homo sapiens OS-9 gene, 5' upstream region and partial cds.
+ACCESSION   AB002805
+VERSION     AB002805.1  GI:2780780
+KEYWORDS    OS-9.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kimura,Y., Nakazawa,M., Tsuchiya,N., Asakawa,S., Shimizu,N. and
+            Yamada,M.
+  TITLE     Genomic organization of the OS-9 gene amplified in human sarcomas
+  JOURNAL   J. Biochem. 122 (6), 1190-1195 (1997)
+   PUBMED   9498564
+REFERENCE   2
+  AUTHORS   Kimura,Y., Nakazawa,M. and Yamada,M.
+  TITLE     Cloning and characterization of three isoforms of OS-9 cDNA and
+            expression of the OS-9 gene in various human tumor cell lines
+  JOURNAL   J. Biochem. 123 (5), 876-882 (1998)
+   PUBMED   9562620
+REFERENCE   3  (bases 1 to 1249)
+  AUTHORS   Yamada,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-APR-1997) Michiyuki Yamada, Yokohama City University,
+            Graduate School of Integrated Science; 22-2 Seto Kanazawa-ku,
+            Yokohama, Kanagawa 236-0027, Japan
+            (E-mail:myamada@yokohama-cu.ac.jp, Tel:+85-45-787-2214,
+            Fax:+85-45-787-2370)
+FEATURES             Location/Qualifiers
+     source          1..1249
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /map="12q13"
+                     /clone="257B2"
+                     /cell_line="HL-60"
+                     /clone_lib="BAC"
+     exon            1011..1213
+                     /number=1
+     gene            1052..>1213
+                     /gene="OS-9"
+     CDS             1052..>1213
+                     /gene="OS-9"
+                     /note="see also AB002806"
+                     /codon_start=1
+                     /protein_id="BAA24362.1"
+                     /db_xref="GI:2780781"
+                     /translation="MAAETLLSSLLGLLLLGLLLPASLTGGVGSLNLEELSEMRYGIE
+                     ILPLPVMGGQ"
+     intron          1214..>1249
+                     /number=1
+ORIGIN      
+        1 ggaattcatt ctagttatct atatcattaa gagaactctg ataagggtat ctttgggatt
+       61 tttcgttttg gctggtgaga ttccccagag agggttttcc aaaggtataa tcagcctctt
+      121 gtttaccttt gtttcgtaat aaatattctc aagtttgcta aaccagttaa cattcttctg
+      181 tttgatttcc agcttccaaa atgttgctgt tgttgtctcc tttccctttc ttacggcctg
+      241 gagagtaata cataatttca ccttaactgg aagcccatgt atgcatgtat gtatgtatgt
+      301 atgtatgtat gtatgtatgt atgtatgtac gtacttattt gagacggggt ttcgctgtgt
+      361 tgcgcaggct gcacttgaac tcctgggctc aggagatcct cctgcctcag cctccggagt
+      421 agctgatacc acaggtgcgt gccaccacgt ctggctgccc gcattatttc tctaggattt
+      481 ttactggagg tcattttact ggaggtcaac tgcaggatcg tataggaagg ttttgacaca
+      541 aattttctga ttgcctcaaa gcaatatgta tatatgaaaa gaggtaagcg tctgtataat
+      601 aattgtttgt tttgcaacaa gcatttaata actttcaccg gcactgcgca cgctacctat
+      661 ctgcctcaat actccgcccg gcggtgggca ggatataatg caagagacgt ctgaaaaagc
+      721 aatgagatgc gcatgacagc tgggcgaaga cagagggcaa acttaaaagg accaagcgca
+      781 tagaccacgc ctctgaaatt ggggaacgag gaggggtttg atcttgtcga tgattggctg
+      841 gtctctgacc aatcacggac agcgattgat atttctaatc gtcgtgatcc acctccccag
+      901 gaccttggag ccacgtttac aaataggaat agggtacgtg ggagggatag aacgtacagc
+      961 caataaaatc atgtggcgcc gatgggcgtg ttgaggccgc tgcctggctt agggcggaaa
+     1021 cagattctct gcataagaag gggaacgaaa gatggcggcg gaaacgctgc tgtccagttt
+     1081 gttaggactg ctgcttctgg gactcctgtt acccgcaagt ctgaccggcg gtgtcgggag
+     1141 cctgaacctg gaggagctga gtgagatgcg ttatgggatc gagatcctgc cgttgcctgt
+     1201 catgggaggg caggtgagag gcgtataagg ggcgagggtc tgggcagaa
+//
+LOCUS       AB003730                2291 bp    DNA     linear   PRI 22-OCT-2002
+DEFINITION  Homo sapiens gene for polyubiquitin, complete cds.
+ACCESSION   AB003730
+VERSION     AB003730.1  GI:2627128
+KEYWORDS    polyubiquitin.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Nenoi,M., Mita,K., Ichimura,S. and Kawano,A.
+  TITLE     Higher frequency of concerted evolutionary events in rodents than
+            in man at the polyubiquitin gene VNTR locus
+  JOURNAL   Genetics 148 (2), 867-876 (1998)
+   PUBMED   9504932
+REFERENCE   2  (bases 1 to 2291)
+  AUTHORS   Nenoi,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-MAY-1997) Mitsuru Nenoi, National Institute of
+            Radiological Sciences, Division of Biology and Oncology; 9-1,
+            Anagawa-4-chome, Inage-ku, Chiba, Chiba 263, Japan
+            (E-mail:m_nenoi@nirs.go.jp, Tel:81-43-251-2111(ex.322),
+            Fax:81-43-255-6497)
+FEATURES             Location/Qualifiers
+     source          1..2291
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /map="12q24"
+                     /cell_line="HeLa"
+     gene            425..2254
+                     /gene="UbC"
+     CDS             425..2254
+                     /gene="UbC"
+                     /codon_start=1
+                     /product="polyubiquitin"
+                     /protein_id="BAA23486.1"
+                     /db_xref="GI:2627129"
+                     /translation="MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLI
+                     FAGKQLEDGRTLSDYNIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEPSDTIENV
+                     KAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGGMQIFVKTL
+                     TGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKEST
+                     LHLVLRLRGGMQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGK
+                     QLEDGRTLSDYNIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEPSDTIENVKAKI
+                     QDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGGMQIFVKTLTGKT
+                     ITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLV
+                     LRLRGGMQIFVKTLTGKTITXEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLED
+                     GRTLSDYNIQKESTLHLVLRLRGGMQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKE
+                     GIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGGV"
+ORIGIN      
+        1 ttgggcagtg cacccgtacc tttgggagcg cgcgccctcg tccgtgtcgt gacgtcaccc
+       61 gttctgttgg cttataatgc agggtggggc ccactgcccg gtaggtgtgc ggtaggcttt
+      121 tctccgtcgc aggacgcagg gttcgggcct agggtaggct ctcctgaaat cgacaggcgc
+      181 cggacctctg gtgaggggag ggataagtga ggcgtccagt ttctttggtc ggttttatgt
+      241 acctatcttc ttaagtagct gaagctccgg ttttgaacta tgcgctcggg gttggcgagt
+      301 gtgttttgtg aagtttttta ggcacctttt gaaatgtaat catttgggtc aatatgtaat
+      361 tttcagtgtt agactagtaa attgtccgct aaattctggc cgtttttggc ttttttgtta
+      421 gacaatgcag atcttcgtga agactctgac tggtaagacc atcaccctcg aggttgagcc
+      481 cagtgacacc atcgagaatg tcaaggcaaa gatccaagat aaggaaggca tccctcctga
+      541 ccagcagagg ctgatctttg ctggaaaaca gctggaagat gggcgcaccc tgtctgacta
+      601 caacatccag aaagagtcca ccctgcacct ggtgctccgt ctcagaggtg ggatgcaaat
+      661 cttcgtgaag acactcactg gcaagaccat cacccttgag gtcgagccca gtgacaccat
+      721 cgagaacgtc aaagcaaaga tccaggacaa ggaaggcatt cctcctgacc agcagaggtt
+      781 gatctttgcc ggaaagcagc tggaagatgg gcgcaccctg tctgactaca acatccagaa
+      841 agagtctacc ctgcacctgg tgctccgtct cagaggtggg atgcagatct tcgtgaagac
+      901 cctgactggt aagaccatca ccctcgaggt ggagcccagt gacaccatcg agaatgtcaa
+      961 ggcaaagatc caagataagg aaggcattcc tcctgatcag cagaggttga tctttgccgg
+     1021 aaaacagctg gaagatggtc gtaccctgtc tgactacaac atccagaaag agtccacctt
+     1081 gcacctggta ctccgtctca gaggtgggat gcaaatcttc gtgaagacac tcactggcaa
+     1141 gaccatcacc cttgaggtcg agcccagtga cactatcgag aacgtcaaag caaagatcca
+     1201 agacaaggaa ggcattcctc ctgaccagca gaggttgatc tttgccggaa agcagctgga
+     1261 agatgggcgc accctgtctg actacaacat ccagaaagag tctaccctgc acctggtgct
+     1321 ccgtctcaga ggtgggatgc agatcttcgt gaagaccctg actggtaaga ccatcactct
+     1381 cgaagtggag ccgagtgaca ccattgagaa tgtcaaggca aagatccaag acaaggaagg
+     1441 catccctcct gaccagcaga ggttgatctt tgccggaaaa cagctggaag atggtcgtac
+     1501 cctgtctgac tacaacatcc agaaagagtc caccttgcac ctggtgctcc gtctcagagg
+     1561 tgggatgcag atcttcgtga agaccctgac tggtaagacc atcactctcg aggtggagcc
+     1621 gagtgacacc attgagaatg tcaaggcaaa gatccaagac aaggaaggca tccctcctga
+     1681 ccagcagagg ttgatctttg ctgggaaaca gctggaagat ggacgcaccc tgtctgacta
+     1741 caacatccag aaagagtcca ccctgcacct ggtgctccgt cttagaggtg ggatgcagat
+     1801 cttcgtgaag accctgactg gtaagaccat cactcncgaa gtggagccga gtgacaccat
+     1861 cgagaatgtc aaggcaaaga tccaagacaa ggaaggcatc cctcctgacc agcagaggtt
+     1921 gatctttgcc gggaaacagc tggaagatgg acgcaccctg tctgactaca acatccagaa
+     1981 agagtccacc ctgcacctgg tgctccgtct cagaggtggg atgcagatct tcgtgaagac
+     2041 cctgactggt aagaccatca ccctcgaggt ggagcccagt gacaccatcg agaatgtcaa
+     2101 ggcaaagatc caagataagg aaggcatccc tcctgatcag cagaggttga tctttgctgg
+     2161 gaaacagctg gaagatggac gcaccctgtc tgactacaac atccagaaag agtccactct
+     2221 gcacttggtc ctgcgcttga gggggggtgt ctaagtttcc ccttttaagg tttcaacaaa
+     2281 tttcattgca c
+//
+LOCUS       AB005990                4706 bp    DNA     linear   PRI 10-OCT-1997
+DEFINITION  Homo sapiens DNA for 25-hydroxyvitamin D3 1alpha-hydroxylase,
+            complete cds.
+ACCESSION   AB005990
+VERSION     AB005990.1  GI:2516245
+KEYWORDS    25-hydroxyvitamin D3 1alpha-hydroxylase.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Murayama,A., Kitanaka,S., Takeyama,K. and Kato,S.
+  TITLE     Human 25-hydroxyvitamin D3 1alpha-hydroxylase gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 4706)
+  AUTHORS   Takeyama,K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-JUL-1997) Ken-ichi Takeyama, The University of Tokyo,
+            Institute of Molecular and Cellular Biosciences; Yayoi 1-1-1,
+            Bunkyo-ku, Tokyo, Bunkyo-ku, Tokyo 113, Japan
+            (E-mail:ktake@m.u-tokyo.ac.jp, Tel:+81-3-5802-8632,
+            Fax:+81-3-5684-8342)
+FEATURES             Location/Qualifiers
+     source          1..4706
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /map="12q13.3"
+     CDS             join(1..195,845..1035,1543..1745,1831..2031,2116..2288,
+                     2492..2664,2866..2944,3234..3431,3787..3900)
+                     /codon_start=1
+                     /product="25-hydroxyvitamin D3 1alpha-hydroxylase"
+                     /protein_id="BAA22657.1"
+                     /db_xref="GI:2516246"
+                     /translation="MTQTLKYASRVFHRVRWAPELGASLGYREYHSARRSLADIPGPS
+                     TPSFLAELFCKGGLSRLHELQVQGAAHFGPVWLASFGTVRTVYVAAPALVEELLRQEG
+                     PRPERCSFSPWTEHRRCRQRACGLLTAEGEEWQRLRSLLAPLLLRPQAAARYAGTLNN
+                     VVCDLVRRLRRQRGRGTGPPALVRDVAGEFYKFGLEGIAAVLLGSRLGCLEAQVPPDT
+                     ETFIRAVGSVFVSTLLTMAMPHWLRHLVPGPWGRLCRDWDQMFAFAQRHVERREAEAA
+                     MRNGGQPEKDLESGAHLTHFLFREELPAQSILGNVTELLLAGVDTVSNTLSWALYELS
+                     RHPEVQTALHSEITAALSPGSSAYPSATVLSQLPLLKAVVKEVLRLYPVVPGNSRVPD
+                     KDIHVGDYIIPKNTLVTLCHYATSRDPAQFPEPNSFRPARWLGEGPTPHPFASLPFGF
+                     GKRSCMGRRLAELELQMALAQILTHFEVQPEPGAAPVRPKTRTVLVPERSINLQFLDR
+                     "
+ORIGIN      
+        1 atgacccaga ccctcaagta cgcctccaga gtgttccatc gcgtccgctg ggcgcccgag
+       61 ttgggcgcct ccctaggcta ccgagagtac cactcagcac gccggagctt ggcagacatc
+      121 ccaggcccct ctacgcccag ctttctggcc gaacttttct gcaagggggg gctgtcgagg
+      181 ctacacgagc tgcaggtagg aagggacgcc tttcccgaga cagagtgctg gggaaactgg
+      241 ttttgacagc gtcagaaagg actgactagt gcagagcaaa tgtgggacag ccagagagaa
+      301 cggatgccca tgaaataagg aaaaggcgag ttgaggctgg gggcggtgtg gctacactcg
+      361 ggcagagccc gtcccgactc ttagcagagg gcgctgcgaa agcgccttct cgctgtcctg
+      421 aggtgtggag atcctgcaga taaagtacaa gtgcgcggga gggggaggcc ggagtgggca
+      481 gtaccctccg cctgcttgcg gcttaaagct acatgggttc cttttcattc actgaggact
+      541 cgtcctgaga tggacagtcc agacatggaa cttttagaga tttctcctcg accgagatga
+      601 tcagagaggt cctgaatgtc tgccttgcac aaagttccgg ttttgcccat cacactcaaa
+      661 ctttctaggg atgggaaatg agagaggagg agtttgcagt atcaaaggca tacactagtt
+      721 gggcacccga gaaagagcag aagctcccta ttcccaagcc cagtcaacgc ccttggcgtg
+      781 ggcacaggtc aagctgaaag tccccgccca ggtatccaag tgtccgctgt gtccgctccc
+      841 ccaggtgcag ggcgccgcgc acttcgggcc ggtgtggcta gccagctttg ggacagtgcg
+      901 caccgtgtac gtggctgccc ctgcactcgt cgaggagctg ctgcgacagg agggaccccg
+      961 gcccgagcgc tgcagcttct cgccctggac ggagcaccgc cgctgccgcc agcgggcttg
+     1021 cggactgctc actgcgtgag tcttctctgc ccccagaagc ccagacgccc tgcagcggcc
+     1081 ctctcctgct gcgggtcccg aaactatcaa tctgggggca tggtgggagg tcggctgtcc
+     1141 cactctacca ttgggcatct tggggttccc atcccagtct gcttcaccca cactcaggtt
+     1201 gagccccaac ctcactcccc gcctacctcc ttatcctttg aggcccgaat cctgggaact
+     1261 gggggaaccg gaggaattgg gctagggtac aaggatctgg atggaatgaa tgtaaggttc
+     1321 tgtgactcaa gttacccggg aaccccggcc cctgagggca ggaaatgagt aaagaggaag
+     1381 ggggctggaa gacaggcgca ggccggtgca ggtttccgta ccccaagggg gcagaggcaa
+     1441 tccctctctt ggccaccgca gccgaacgcg ctccttcatt gcagccagtc ccgtcgagcc
+     1501 gtccccacct tcccgatgcg cactctctcc tcaaccctgc agggaaggcg aagaatggca
+     1561 aaggctccgc agtctcctgg ccccgctcct cctccggcct caagcggccg cccgctacgc
+     1621 cggaaccctg aacaacgtag tctgcgacct tgtgcggcgt ctgaggcgcc agcggggacg
+     1681 tggcacgggg ccgcccgccc tggttcggga cgtggcgggg gaattttaca agttcggact
+     1741 ggaaggtgag tcccaggaca gagctgggca ggcgtcgggg gcgccctacc agagcctccc
+     1801 ggaaccctga cggcgccccc tcccgacaag gcatcgccgc ggttctgctc ggctcgcgct
+     1861 tgggctgcct ggaggctcaa gtgccacccg acacggagac cttcatccgc gctgtgggct
+     1921 cggtgtttgt gtccacgctg ttgaccatgg cgatgcccca ctggctgcgc caccttgtgc
+     1981 ctgggccctg gggccgcctc tgccgagact gggaccagat gtttgcattt ggtaaggcac
+     2041 aggtcgaggt ggaaatgggg gaatgtaaag ctgtccaggg gtagcgaggt attcacgtgc
+     2101 cttctaccca cgcagctcag aggcacgtgg agcggcgaga ggcagaggca gccatgagga
+     2161 acggaggaca gcccgagaag gacctggagt ctggggcgca cctgacccac ttcctgttcc
+     2221 gggaagagtt gcctgcccag tccatcctgg gaaatgtgac agagttgcta ttggcgggag
+     2281 tggacacggt gaggttctcc ctccgtgctg tgagccggtt ccagggctta gcctccgcag
+     2341 actccggctc catttttctg ttgcagggga tccattatgg ccacgtagac cagcttggct
+     2401 tagcaccctg tagccccaga ctcttccata atctgcaccc tctgctgggt tctcacaccc
+     2461 aacacctctc ttgctttcac atgtttttca ggtgtccaac acgctctctt gggctctgta
+     2521 tgagctctcc cggcaccccg aagtccagac agcactccac tcagagatca cagctgccct
+     2581 gagccctggc tccagtgcct acccctcagc cactgttctg tcccagctgc ccctgctgaa
+     2641 ggcggtggtc aaggaagtgc taaggtgagg gggaaggaga ggaggaacaa gaggaaatgc
+     2701 caaggaaggg ctggggaagc aactagtgga tggaagcagg gagatagcag agaaaaatgg
+     2761 ccctctactc ctggccaaaa agggtttgga agttggaaac aatgagaagg gggctgcagc
+     2821 ccctagcctc atcttgctgt ctccattttg tgctttgcaa cctagactgt accctgtggt
+     2881 acctggaaat tctcgtgtcc cagacaaaga cattcatgtg ggtgactata ttatccccaa
+     2941 aaatgtgagt aaagcctatg caccctttct actgagccat tcctcactat cttgggcccc
+     3001 aaccctgttc tcaaacactc tcctaaaagc ccttcaaaca ctccccttga cccctctcta
+     3061 ggatatgcct ttctaggatg taatggaaca gtggggagat ccttccaaaa gtagccccag
+     3121 aaaacttccc catcacccac caggacctgc ctttgtccct gtctgaatat cctcttcttc
+     3181 atgcctgccc tattctgagc ccaaactgac aagtttgttt tcctttgcac cagacgctgg
+     3241 tcactctgtg tcactatgcc acttcaaggg accctgccca gttcccagag ccaaattctt
+     3301 ttcgtccagc tcgctggctg ggggagggtc ccacccccca cccatttgca tctcttccct
+     3361 ttggctttgg caagcgcagc tgtatgggga gacgcctggc agagcttgaa ttgcaaatgg
+     3421 ctttggccca ggtgagtgct ctagatttta taccttcccc agactggaga gaccctaacc
+     3481 ctctaaagtt gtgagctctt tcccctgaca agcataggaa atcatataag acctggtaga
+     3541 atgaatcttc tgaaatatga taagcccatt ataggcctgg agtgtaagtg agggtattca
+     3601 aactattttt tccctaccat aatccctcac ccttattaac caagaagtcc cctactggcc
+     3661 acaggtgcca cccaatcatt gaccattcta acactaataa tgcatgccct ttaccaattg
+     3721 gattaccaat gaatcccccc attatagata tctttcatag taatgctcac cttcttccct
+     3781 ttccagatcc taacacattt tgaggtgcag cctgagccag gtgcggcccc agttagaccc
+     3841 aagacccgga ctgtcctggt acctgaaagg agcatcaacc tacagttttt ggacagatag
+     3901 tcccatggaa agagactgtc atcatcaccc tttcattcat catagggata agattttttg
+     3961 taggcacaag accaaggtat acatcttccc ctaatgccta tctgaccaaa ctggatagaa
+     4021 ccaccatagt gaagtgtgag gcggccctga ccaatgtgtg aagtatgcac ttggcctgac
+     4081 tcaggaagcc aggtgagaaa accatggtct ctctgcttgc ttggcccttc tgatcatgta
+     4141 tgcatccccc aaggatgaaa tcagatttta actaataatg ctggatggcc tgaggaaaga
+     4201 ttcaactgcc tctctttttg ggctttcata gtgttcattg atgctgctgg ctaagcattt
+     4261 atcaaagcat aagctcagta actgtgcatc tggtctgtac ctggttggtc cttcgtcttt
+     4321 gcatgtaagc tctttgagag gaagggtgaa gccttatttg ttttttatgt cccctgccag
+     4381 ggcctgtctc tgactaggtg tcaccataca cattcttaga ttgaatctga accatgtggc
+     4441 agaagggata agcagcttac ttagtaggct ctgtctaccc ccttccttct ttgtcttgcc
+     4501 cctaggaagg tgaatctgcc ctagcctggt ttacggtttc ttataactct cctttgctct
+     4561 ctggccacta ttaagtgggt ttgccccatc acttagttct caggcagaga catctttggg
+     4621 cctgtccctg cccaggcctc tggcttttta tattgaaaat ttttaaatat tcacaaattt
+     4681 tagaataaat caaatattcc attctt
+//
+LOCUS       AB007160                 120 bp    DNA     linear   PRI 08-FEB-2002
+DEFINITION  Homo sapiens gene for ribosomal protein S26, partial cds.
+ACCESSION   AB007160
+VERSION     AB007160.1  GI:3077755
+KEYWORDS    ribosomal protein S26.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kenmochi,N., Kawaguchi,T., Rozen,S., Davis,E., Goodman,N.,
+            Hudson,T.J., Tanaka,T. and Page,D.C.
+  TITLE     A map of 75 human ribosomal protein genes
+  JOURNAL   Genome Res. 8 (5), 509-523 (1998)
+   PUBMED   9582194
+REFERENCE   2  (bases 1 to 120)
+  AUTHORS   Kenmochi,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1997) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..120
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /note="STS map; D12S325-D12S329"
+     CDS             <1..>70
+                     /codon_start=1
+                     /product="ribosomal protein S26"
+                     /protein_id="BAA25823.1"
+                     /db_xref="GI:4432747"
+                     /translation="KFVIRNIVEAAAVRDISEASVFD"
+     exon            <1..70
+                     /product="ribosomal protein S26"
+     intron          71..>120
+ORIGIN      
+        1 aaattcgtca ttcgaaacat agtggaggcc gcagcagtca gggacatttc tgaagcgagc
+       61 gtcttcgatg gtaagtgggt caccggcgac gaactgtgtg aggatcccag tatcttaaag
+//
+LOCUS       AB007161                 150 bp    DNA     linear   PRI 08-FEB-2002
+DEFINITION  Homo sapiens gene for ribosomal protein S26, partial cds.
+ACCESSION   AB007161
+VERSION     AB007161.1  GI:3077756
+KEYWORDS    ribosomal protein S26.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kenmochi,N., Kawaguchi,T., Rozen,S., Davis,E., Goodman,N.,
+            Hudson,T.J., Tanaka,T. and Page,D.C.
+  TITLE     A map of 75 human ribosomal protein genes
+  JOURNAL   Genome Res. 8 (5), 509-523 (1998)
+   PUBMED   9582194
+REFERENCE   2  (bases 1 to 150)
+  AUTHORS   Kenmochi,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1997) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..150
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /note="STS map; D12S325-D12S329"
+     intron          <1..13
+     CDS             <14..>150
+                     /codon_start=3
+                     /product="ribosomal protein S26"
+                     /protein_id="BAA25824.1"
+                     /db_xref="GI:3088343"
+                     /translation="YVLPKLYVKLHYCVSCAIHSKVVRNRSREARKDRTPPPRFRPAG
+                     A"
+     exon            14..>150
+                     /product="ribosomal protein S26"
+ORIGIN      
+        1 ttctattcct tagcctatgt gcttcccaag ctgtatgtga agctacatta ctgtgtgagt
+       61 tgtgcaattc acagcaaagt agtcaggaat cgatctcgtg aagcccgcaa ggaccgaaca
+      121 cccccacccc gatttagacc tgcgggtgct
+//
+LOCUS       AB007186                 879 bp    DNA     linear   PRI 08-FEB-2002
+DEFINITION  Homo sapiens gene for ribosomal protein L41, partial cds.
+ACCESSION   AB007186
+VERSION     AB007186.1  GI:3077781
+KEYWORDS    ribosomal protein L41.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kenmochi,N., Kawaguchi,T., Rozen,S., Davis,E., Goodman,N.,
+            Hudson,T.J., Tanaka,T. and Page,D.C.
+  TITLE     A map of 75 human ribosomal protein genes
+  JOURNAL   Genome Res. 8 (5), 509-523 (1998)
+   PUBMED   9582194
+REFERENCE   2  (bases 1 to 879)
+  AUTHORS   Kenmochi,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1997) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..879
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /note="STS map; D12S325-D12S329"
+     exon            <1..38
+                     /product="ribosomal protein L41"
+     intron          39..154
+     exon            155..179
+                     /product="ribosomal protein L41"
+     CDS             join(168..179,568..590,862..>879)
+                     /codon_start=1
+                     /product="ribosomal protein L41"
+                     /protein_id="BAA28285.1"
+                     /db_xref="GI:3142154"
+                     /translation="MRAKWRKKRMRRLKRKR"
+     intron          180..567
+     exon            568..590
+                     /product="ribosomal protein L41"
+     intron          591..861
+     exon            862..>879
+                     /product="ribosomal protein L41"
+ORIGIN      
+        1 acttcgcctt tctctcggcc ttagcgccat ttttttgggt gagtgtttnt ttggttcctg
+       61 cgttgggatt ccgtgtacaa tccatagaca tctgacctcg gcacttagca tcatcacaga
+      121 aaactaactg tagcctttct ctctttccct gtagaaacct ctgcgccatg agagccaagg
+      181 tgagcggttc ctggtagtaa gcttggnagg taggagttgg cgagtagtag cgaggagacg
+      241 aaggcaagtc cgccatacct cctgaactac tgggtttcaa gggtgcccaa gagctggtgg
+      301 gagagagaag gtagtttgtg agagagctag cggttaagtg ctatgggtag agagggtggg
+      361 cttagaaaaa gggtggaatc ctgatcttat gtnggagggt gtccaagtta ctgatgtagt
+      421 tgttacgcac caatctttca tacttctggg ttaagaatct gtccggttct aaagagtgca
+      481 tttcatatcc tggctaagcc tactaataag cttcatccct tttttttttt tttttttaat
+      541 tatctactgc ttgtgatcgg ttgctagtgg aggaagaagc gaatgcgcag gtacgttgag
+      601 actttgccag cccaggagga gggaagttcc ttggacaaaa cttaggagaa acatttggtt
+      661 tggaaatctt aaaagatctt taggagaaaa acgtttgagt gttttactcc ctggagccag
+      721 gatttaacag aacagagaac gatagaaccg tagtgcttgt tcattttacc acctcattct
+      781 ttatgtggac gtttgattta atgtgggagg gaaaggcaac tctggtttga ggtgtattcc
+      841 attcctgtgt ctgcttttca ggctgaagcg caaaagaag
+//
+LOCUS       AB007187                 670 bp    DNA     linear   PRI 08-FEB-2002
+DEFINITION  Homo sapiens gene for ribosomal protein P0, partial cds.
+ACCESSION   AB007187
+VERSION     AB007187.1  GI:3077782
+KEYWORDS    ribosomal protein P0.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Kenmochi,N., Kawaguchi,T., Rozen,S., Davis,E., Goodman,N.,
+            Hudson,T.J., Tanaka,T. and Page,D.C.
+  TITLE     A map of 75 human ribosomal protein genes
+  JOURNAL   Genome Res. 8 (5), 509-523 (1998)
+   PUBMED   9582194
+REFERENCE   2  (bases 1 to 670)
+  AUTHORS   Kenmochi,N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-SEP-1997) Naoya Kenmochi, Miyazaki Medical College,
+            Central Research Laboratories; 5200 Kihara, Kiyotake, Miyazaki
+            889-1692, Japan (E-mail:kenmochi@post.miyazaki-med.ac.jp,
+            Tel:81-985-85-9665, Fax:81-985-85-1514)
+FEATURES             Location/Qualifiers
+     source          1..670
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /note="STS map; D12S366-D12S342"
+     CDS             join(<1..141,531..>670)
+                     /codon_start=1
+                     /product="ribosomal protein P0"
+                     /protein_id="BAA25845.1"
+                     /db_xref="GI:4432757"
+                     /translation="GVRNVASVCLQIGYPTVASVPHSIINGYKRVLALSVETDYTFPL
+                     AEKVKAFLADPSAFVAAAPVAAATTAAPAAAAAPAKVEAKEESEESDED"
+     exon            1..141
+                     /product="ribosomal protein P0"
+     intron          142..530
+     exon            531..>670
+                     /product="ribosomal protein P0"
+ORIGIN      
+        1 ggtgtccgca atgttgccag tgtctgtctg cagattggct acccaactgt tgcatcagta
+       61 ccccattcta tcatcaacgg gtacaaacga gtcctggcct tgtctgtgga gacggattac
+      121 accttcccac ttgctgaaaa ggtaaaagga tcccaccagg accacagtgg gcctgactgt
+      181 gacaaattag cagggtgatg tggccttcta ccttactgct tttatagttg tattttatat
+      241 agcagataat ttngtgaggg gatatttgag aggttgggag gcagggaagg cgtttctcac
+      301 ttgagaaatg acaagagacc caaagagggg gttaatgggc aagagctggg ccttaggaac
+      361 cctgcctcac taggccatac ccaagctgtc ctgcttgggc tgcttctgac aggaaaggct
+      421 tcacacggac tttgatattg ttggtcctta aactctacca aggcaggagg ttgggtggnt
+      481 aatagaggng tgttngattg accatttgga cacttccccn ctcctttcag gtcaaggcct
+      541 tcttggctga tccatctgcc tttgtggctg ctgcccctgt ggctgctgcc accacagctg
+      601 ctcctgctgc tgctgcagcc ccagctaagg ttgaagccaa ggaagagtcg gaggagtcgg
+      661 acgaggatat
+//
+LOCUS       AB013601                2852 bp    DNA     linear   PRI 13-SEP-2008
+DEFINITION  Homo sapiens gene for DUSP6, complete cds.
+ACCESSION   AB013601 AB013383 AB013600
+VERSION     AB013601.2  GI:60683881
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Furukawa,T., Yatsuoka,T., Youssef,E.M., Abe,T., Yokoyama,T.,
+            Fukushige,S., Soeda,E., Hoshi,M., Hayashi,Y., Sunamura,M.,
+            Kobari,M. and Horii,A.
+  TITLE     Genomic analysis of DUSP6, a dual specificity MAP kinase
+            phosphatase, in pancreatic cancer
+  JOURNAL   Cytogenet. Cell Genet. 82 (3-4), 156-159 (1998)
+   PUBMED   9858808
+REFERENCE   2  (bases 1 to 2852)
+  AUTHORS   Furukawa,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-MAY-1998) Contact:Toru Furukawa Tohoku University
+            School of Medicine, Molecular Pathology; 2-1 Seiryomachi, Aoba-ku,
+            Sendai, Miyagi 980-8575, Japan
+COMMENT     On or before Mar 10, 2005 this sequence version replaced
+            gi:3345675, gi:3345676, gi:3345683.
+FEATURES             Location/Qualifiers
+     source          1..2852
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /map="12q21-q23.1"
+                     /clone="1269L15"
+                     /clone_lib="RPCI Human PAC Library"
+     gene            1..2852
+                     /gene="DUSP6"
+     exon            1..751
+                     /gene="DUSP6"
+                     /product="DUSP6"
+                     /number=1
+     CDS             join(352..751,995..1432,1652..1959)
+                     /gene="DUSP6"
+                     /codon_start=1
+                     /product="DUSP6"
+                     /protein_id="BAA31968.1"
+                     /db_xref="GI:3345684"
+                     /translation="MIDTLRPVPFASEMAISKTVAWLNEQLELGNERLLLMDCRPQEL
+                     YESSHIESAINVAIPGIMLRRLQKGNLPVRALFTRGEDRDRFTRRCGTDTVVLYDESS
+                     SDWNENTGGESLLGLLLKKLKDEGCRAFYLEGGFSKFQAEFSLHCETNLDGSCSSSSP
+                     PLPVLGLGGLRISSDSSSDIESDLDRDPNSATDSDGSPLSNSQPSFPVEILPFLYLGC
+                     AKDSTNLDVLEEFGIKYILNVTPNLPNLFENAGEFKYKQIPISDHWSQNLSQFFPEAI
+                     SFIDEARGKNCGVLVHCLAGISRSVTVTVAYLMQKLNLSMNDAYDIVKMKKSNISPNF
+                     NFMGQLLDFERTLGLSSPCDNRVPAQQLYFTTPSNQNVYQVDSLQST"
+     gap             802..901
+                     /estimated_length=unknown
+     exon            995..1432
+                     /gene="DUSP6"
+                     /product="DUSP6"
+                     /number=2
+     gap             1501..1600
+                     /estimated_length=unknown
+     exon            1652..2852
+                     /gene="DUSP6"
+                     /number=3
+ORIGIN      
+        1 ccagcctcgg agggagggat tagaagccgc tagacttttt ttcctcccct ctcagtagca
+       61 cggagtccga attaattgga tttcattcac tggggaggaa caaaaactat ctgggcagct
+      121 tcattgagag agattcattg acactaagag ccagcgctgc agctggtgca gagagaacct
+      181 ccggctttga cttctgtctc gtctgcccca aggccgctag cctcggcttg ggaaggcgag
+      241 gcggaattaa accccgctcc gagagcgcac gttcgcgcgc ggtgcgtcgg ccattgcctg
+      301 ccccgagggg cgtctggtag gcaccccgcc ctctcccgca gctcgacccc catgatagat
+      361 acgctcagac ccgtgccctt cgcgtcggaa atggcgatca gcaagacggt ggcgtggctc
+      421 aacgagcagc tggagctggg caacgagcgg ctgctgctga tggactgccg gccgcaggag
+      481 ctatacgagt cgtcgcacat cgagtcggcc atcaacgtgg ccatcccggg catcatgctg
+      541 cggcgcctgc agaagggtaa cctgccggtg cgcgcgctct tcacgcgcgg cgaggaccgg
+      601 gaccgcttca cccggcgctg tggcaccgac acagtggtgc tctacgacga gagcagcagc
+      661 gactggaacg agaatacggg cggcgagtcg ttgctcgggc tgctgctcaa gaagctcaag
+      721 gacgagggct gccgggcgtt ctacctggaa ggtacgcgcc cagggaactc ctggcgcgga
+      781 gcacggctag gggcgcaggg cnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      841 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      901 ntgtggtgtt tcttgcgccg ggctgcggtt cttacaagct gtgaaaacta ctacggcttc
+      961 tcaggttaga tgattgcttt tctcgttctg gcaggtggct tcagtaagtt ccaagccgag
+     1021 ttctccctgc attgcgagac caatctagac ggctcgtgta gcagcagctc gccgccgttg
+     1081 ccagtgctgg ggctcggggg cctgcggatc agctctgact cttcctcgga catcgagtct
+     1141 gaccttgacc gagaccccaa tagtgcaaca gactcggatg gtagtccgct gtccaacagc
+     1201 cagccttcct tcccagtgga gatcttgccc ttcctctact tgggctgtgc caaagactcc
+     1261 accaacttgg acgtgttgga ggaattcggc atcaagtaca tcttgaacgt cacccccaat
+     1321 ttgccgaatc tctttgagaa cgcaggagag tttaaataca agcaaatccc catctcggat
+     1381 cactggagcc aaaacctgtc ccagtttttc cctgaggcca tttctttcat aggtgagact
+     1441 aattaatagt cgtcgctctg acatttaaat gcaaaattcc tagccattca tagagtttaa
+     1501 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     1561 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn aagggtggtt ttcagtctgc
+     1621 tgagatcttg cttttctttt tgtgttcaca gatgaagccc ggggcaagaa ctgtggtgtc
+     1681 ttggtacatt gcttggctgg cattagccgc tcagtcactg tgactgtggc ttaccttatg
+     1741 cagaagctca atctgtcgat gaacgatgcc tatgacattg tcaaaatgaa aaaatccaac
+     1801 atatccccta acttcaactt catgggtcag ctgctggact tcgagaggac gctgggactc
+     1861 agcagcccat gtgacaacag ggttccagca cagcagctgt attttaccac cccttccaac
+     1921 cagaatgtat accaggtgga ctctctgcaa tctacgtgaa agaccccaca cccctccttg
+     1981 ctggaatgtg tctggccctt cagcagtttc tcttggcagc atcagctggg ctgctttctt
+     2041 tgtgtgtggc cccaggtgtc aaaatgacac cagctgtctg tactagacaa ggttaccaag
+     2101 tgcggaattg gttaatacta acagagagat ttgctccatt ctctttggaa taacaggaca
+     2161 tgctgtatag atacaggcag taggtttgct ctgtacccat gtgtacagcc tacccatgca
+     2221 gggactggga ttcgaggact tccaggcgca tagggtagaa ccaaatgata gggtaggagc
+     2281 atgtgttctt tagggccttg taaggctgtt tccttttgca tctggaactg actatataat
+     2341 tgtcttcaag tgaagactaa ttcaattttg catatagagg agccaaagag agatttcagc
+     2401 tctgtatttg tggtatcagt gttggaaaag agaaatctga tactccattt ggattattgt
+     2461 aaatatttga tcttgaatca cttgacagtg tttgtttgaa ttgtgtttgt tttttccttt
+     2521 gatgggctta aaagaaatta tccaaaggga gaaagagcag tatgccactt cttaaaacag
+     2581 aacaaaacaa aaaaagaaaa ttgtgctctg ttgtaatcca aaggggagat ttgcagcatg
+     2641 cttgacttta ccaattctga tgacatcttt acggacacta ttatcactaa gaccttgtta
+     2701 tggcgaagtc tttagtcttt ttcatgtatt ttcctcatga ttttttctct ttatgtagtt
+     2761 tgagtatgcc ttacctttgt aaatattttt gcttgtgttg tcgcaaaggg gataatctgg
+     2821 gaaagacacc aaatcatggg ctcactttaa aa
+//
+LOCUS       AB024911                8099 bp    DNA     linear   PRI 24-FEB-2005
+DEFINITION  Homo sapiens hGnT-IV-H gene for
+            UDP-N-acetylglucosamine:alpha-1,3-D-mannoside
+            beta-1,4-N-acetylglucosaminyltransferase IV-homologue, complete
+            cds.
+ACCESSION   AB024911 AB024906 AB024907 AB024908 AB024909 AB024910
+VERSION     AB024911.2  GI:60683899
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1
+  AUTHORS   Furukawa,T., Youssef,E.M., Yatsuoka,T., Yokoyama,T., Makino,N.,
+            Inoue,H., Fukushige,S., Hoshi,M., Hayashi,Y., Sunamura,M. and
+            Horii,A.
+  TITLE     Cloning and characterization of the human UDP-N-acetylglucosamine:
+            alpha-1,3-D-mannoside beta-1,4-N-acetylglucosaminyltransferase
+            IV-homologue (hGnT-IV-H) gene
+  JOURNAL   J. Hum. Genet. 44 (6), 397-401 (1999)
+   PUBMED   10570912
+REFERENCE   2  (bases 1 to 8099)
+  AUTHORS   Furukawa,T. and Horii,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (10-MAR-1999) Toru Furukawa, Tohoku University School of
+            Medicine, Molecular Pathology; 2-1 Seiryomachi, Aoba-ku, Sendai,
+            Miyagi 980-8575, Japan (E-mail:furukawa@mail.cc.tohoku.ac.jp,
+            Tel:81-22-717-8043, Fax:81-22-717-8047)
+COMMENT     On or before Mar 10, 2005 this sequence version replaced
+            gi:5701710, gi:5701711, gi:5701712, gi:5701713, gi:5701714,
+            gi:5701715.
+FEATURES             Location/Qualifiers
+     source          1..8099
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="12"
+                     /map="12q21"
+                     /clone_lib="Human BAC library"
+     gene            1..7596
+                     /gene="hGnT-IV-H"
+     mRNA            join(1..498,815..864,1695..1814,2892..3044,5194..5341,
+                     5911..7596)
+                     /gene="hGnT-IV-H"
+     exon            1..498
+                     /gene="hGnT-IV-H"
+                     /product="UDP-N-acetylglucosamine:alpha-1,3-D-mannoside
+                     beta-1,4-N-acetylglucosaminyltransferase IV-homologue"
+                     /number=1
+     gap             499..598
+                     /estimated_length=unknown
+     exon            815..864
+                     /gene="hGnT-IV-H"
+                     /product="UDP-N-acetylglucosamine:alpha-1,3-D-mannoside
+                     beta-1,4-N-acetylglucosaminyltransferase IV-homologue"
+                     /number=2
+     gap             1160..1259
+                     /estimated_length=unknown
+     exon            1695..1814
+                     /gene="hGnT-IV-H"
+                     /product="UDP-N-acetylglucosamine:alpha-1,3-D-mannoside
+                     beta-1,4-N-acetylglucosaminyltransferase IV-homologue"
+                     /number=3
+     gap             2249..2348
+                     /estimated_length=unknown
+     exon            2892..3044
+                     /gene="hGnT-IV-H"
+                     /product="UDP-N-acetylglucosamine:alpha-1,3-D-mannoside
+                     beta-1,4-N-acetylglucosaminyltransferase IV-homologue"
+                     /number=4
+     CDS             join(2898..3044,5194..5341,5911..7052)
+                     /gene="hGnT-IV-H"
+                     /codon_start=1
+                     /product="UDP-N-acetylglucosamine:alpha-1,3-D-mannoside
+                     beta-1,4-N-acetylglucosaminyltransferase IV-homologue"
+                     /protein_id="BAA83087.1"
+                     /db_xref="GI:5701717"
+                     /translation="MFKFHQMKHIFEILDKMRCLRKRSTVSFLGVLVIFLLFMNLYIE
+                     DSYVLEGDKQLIRETSTHQLNSERYVHTFKDLSNFSGAINVTYRYLAATPLQRKRYLT
+                     IGLSSVKRKKGNYLLETIKSIFEQSSYEELKEISVVVHLADFNSSWRDAMVQDITQKF
+                     AHHIIAGRLMVIHAPEEYYPILDGLKRNYNDPEDRVKFRSKQNVDYAFLLNFCANTSD
+                     YYVMLEDDVRCSXNFLTAIKKVIASLEGTYWVTLEFSKLGYIGKLYHSHDLPRLAHFL
+                     LMFYQEMPCDWLLTHFRGLLAQKNVIRFKPSLFQHMGYYSSYKGTENKLKDDDFEEES
+                     FDIPDNPPASLYTNMNVFENYEASKAYSSVDEYFWGKPPSTGDVFVIVFENPIIIKKI
+                     KVNTGTEDRQNDILHHGALDVGENVMPSKQRRQCSTYLRLGEFKNGNFEMSGVNQKIP
+                     FDIHCMRIYVTKTQKEWLIIRSISIWTS"
+     gap             3465..3564
+                     /estimated_length=unknown
+     repeat_region   3783..4094
+                     /gene="hGnT-IV-H"
+                     /note="AluSx"
+     exon            5194..5341
+                     /gene="hGnT-IV-H"
+                     /product="UDP-N-acetylglucosamine:alpha-1,3-D-mannoside
+                     beta-1,4-N-acetylglucosaminyltransferase IV-homologue"
+                     /number=5
+     gap             5586..5685
+                     /estimated_length=unknown
+     exon            5911..7596
+                     /gene="hGnT-IV-H"
+                     /note="3' UTR 1365..1911"
+                     /number=6
+     3'UTR           7050..7596
+                     /gene="hGnT-IV-H"
+ORIGIN      
+        1 cctgcggggc ttcactctgt gccacaacga gcgaaccgct gtacaggagc tcgactagct
+       61 gtcgcaccgt ctgcacaggc accaccgaag gccatccctg gggaacagaa tgcaacccgg
+      121 gatctagaga gctgtcacat tccaagaaat atttaaattg tgctgatttt cttctggaga
+      181 actgagccca gggaatgaaa ctctccatca agtcatggct ttgcgggcaa tagatcagag
+      241 gatattgcca gttttctaat ggattattgt tatcgggcag gttttctctg aagcttctca
+      301 gctgctgtta cattctactt ggatgggaac tggagatcag ccagatcact tgtatgcaca
+      361 aagctgctgt ggatctgtct ttcaaacaag agctgcagaa aacgctatag caaggttgaa
+      421 gctttatcca ctctgactca cccagaaagc acagccctga ttctgcgtga gaaaggctat
+      481 ctctacagaa actaaaacnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+      541 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnaa
+      601 aggtatgtct attctgtgac atgcatacac agataaatta tgttaaaata tttggtctat
+      661 atttttctgt caatttagaa aatattttat aaatatgatc ctaatgcagt tagatggaaa
+      721 atggcaagtt attacagaga atactnttta ttttactttt atcagcaaga aaccagtggg
+      781 ttgtattagt aatactagac tttctttttt ccagggtatc aacggtttct gtacagcaca
+      841 gattatgaca gcgtctttct taaggtgaga ttctatgtca ttcatggtag tattctaagg
+      901 tactacactt tttaaatgta ttatcaaaaa tatttaataa gtaaaattgt cctggagtag
+      961 ctacacatgc ctaaattgaa aatattttct catcagtttt atgttatttc ttcaatagtg
+     1021 ttgttttcat gataaactct taacaacatt tcttgaacat ttctgagtac aagncatgta
+     1081 atgtgatact ttgattaaaa cttggaaatg tgttaaccat ataagaaaat caagttagag
+     1141 aacaacagca aaacattctn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     1201 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnt
+     1261 tttaattaaa gagatggctt tgtctgtgtt ctcaaatggt aaatttatca attaaaattt
+     1321 taatcaaaac tgttagggaa catttctgag gtacacctgg gcctaatttc ttgccttcaa
+     1381 tgagcccaga gtttatctgg ggaaaaaaaa gttgtgtaaa gaaataagag taagaaaatg
+     1441 ttaaaagtga tgtgatggac aaactacaag ttagacacca gaccccaaaa aagtgttgat
+     1501 cacttcttac ctataggaga gaaatcagca atacttcata gtgacagcat cacttgccct
+     1561 gccatgatga ggagctcaac gtatgtcagc agacaaaggg catggtgttg ggaatgctgt
+     1621 caattactag ggcaagagaa ggtaatagga gcttttaata ataatgaaaa agattttgaa
+     1681 cttttttcca tcagcagatg gaatcttgga acgtctcatg cttgggaagg acatggtcag
+     1741 atttgttgta agaagacttg tgcagaggag tgtggcaaag ggatccagaa gatgcaaggt
+     1801 attatttaga aaaggtagtt gatggaagat ttaacagcat gtgtttgata ctttcttgac
+     1861 tagatacact tgattttcaa agcctggaga atgtatacaa cttaggtcaa tggaaaatgt
+     1921 ataaaataca atattatgtt ggtgagaagc tattatgatc tataatattt tatactgatg
+     1981 ataaataatt actgtatata taaaatatat tttttagaaa aaatgaaatg atggatcatc
+     2041 actgttattt caatgatgaa tttagcaaag tgaagtgaac tttagaaatt agttagatct
+     2101 ctggaacatt atagtaaaag ctataatgag ggccatgggg cattgaaagc ttttgaacta
+     2161 tttgataaac catgacatat taaattatgc ttaacatatt tcagcattac atgtattcac
+     2221 ataaactcca aaatgtgact ttaaaatgnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     2281 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     2341 nnnnnnnnag ttttcaaaca tatgtttgga ttaccccaca gccttaactt cttatcactt
+     2401 ttctttactc cacccagatt cccagttaaa tattttcagt tgacacctac tctgagatta
+     2461 atattaggcc cataattctg ctttttctca ttttcgttat actacaatat gagaggtaaa
+     2521 tgttacctta aagttatacc tcactgatga cagtggactt gactgttttt ctattgtgct
+     2581 tttgtactgt ttctcatcag aggcctgttt tatttacatt attatgacca aagttcatct
+     2641 tttttcgtca gtaactatga gacttgcttt ttatttttat ttactctaca ttaatataaa
+     2701 ccactgcatt gatcttatgt taacatatta attaatgatc tgtgccaacc ttatgtttga
+     2761 aattgggaac agaattttaa ttcaaacatt tgaaagatga aattttacaa ggacctgact
+     2821 tttatatatg cgataaagaa atatttgcat ccaaaaccaa ctgctagtaa ttctgtgtct
+     2881 cttttccaca gaagagaatg tttaaatttc atcaaatgaa acatattttt gaaatacttg
+     2941 ataaaatgag atgcctgaga aaacgttcta cagtgtcatt cttgggagtt cttgtcattt
+     3001 ttctcctttt tatgaacttg tacattgaag atagctatgt tctggtaagt ttgggaggtt
+     3061 gattgtcttt tcttcaaaat aaggcataag tcaaacaaga attagtccca ttgtagccta
+     3121 acttcaatct caagctattg gagaagactt agtttgagca aaattataac atgtatattg
+     3181 tctatttttt gtattaacca tacatcaaca ttacacttgt tttgaattat gttccaatat
+     3241 ttttaatggt gtatattttg tgctccaaat atgtacatgt aattacaaat aagttagcta
+     3301 tcatcactat gcagaataaa tatgtggagc cattaagatt ttgggttttc catttgaaat
+     3361 gcatagaata aacaaaatct gcttagaaag tataactcct tgcttcctct actttctata
+     3421 tatcactgaa tttcaaatcc atgtctatta catgctttaa tgacnnnnnn nnnnnnnnnn
+     3481 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     3541 nnnnnnnnnn nnnnnnnnnn nnnngagatt gatgcgaagt agaagtattg aatgtttcag
+     3601 ctgtaaaact tgtatctgag ctttgtctaa ttttttagaa caaggcttta attaaccttt
+     3661 taatgaccac agcaaaataa tagcaggacc agagttattt aatccattta ctttctctac
+     3721 agtcttatag ctagcacatg cctagcttga ctttctatac tgaataaaat aaatccacat
+     3781 aaggccaggt gtgctggctc acacctataa tcccagcact ttgggaggcc gaggtgagtg
+     3841 gatcacttga ggtcaggagt ttgagacgag cttggccaac atggcggaaa ctcatctcta
+     3901 ctaaaaaata ctaaaattag ctgggcatgg tggcgtgtgc ctgcaatccc agctactcgg
+     3961 gaggctgagg caggagaatg gcttgaacct aggaggcgga ggttatagtg agcagagatc
+     4021 atgccactgc actccagcct gggcaacaga gccagactcc atctcaaaga aaaaaattaa
+     4081 ataaataaat aaaaccacat agtagagtgc acattttgag aaaaaaaaag agagagagag
+     4141 agaaatattt ctttctaatt aggttgttct caaatgtatt ctaccaattc tagtaaatca
+     4201 catatgagtc aaacaaatag tcattttcct aatagtgtat aaccagtaaa ggcttgatca
+     4261 aatgatgatt agataatcaa aatttaccat ttagcttata tcaaagaagg gcaattagtg
+     4321 ggtaaaggat atattttaat ctgaatatga atatgttttc ttgaatataa accttcctga
+     4381 agatttaatg acatgcaaaa tccatcacca aataaataaa agggatctaa aatataaaag
+     4441 gatcgggcat tacatccaat agaatcacac acacacacac acacaaactt aactatcata
+     4501 agaaatatta gtcatagata tctacacatt accttaattt ggtgctaatg tatcctattt
+     4561 gaggttactt taggacatat gaaaaaaatt actgccatag cacccataac tggcccttct
+     4621 caacagctag atagtagcca cataagtgac ttatttaata aagtatcaaa aatccaaata
+     4681 ttgtgcccac tactgcatct tcctaatcat tcctaaagtt tcacaatcat ggagacactg
+     4741 tgtgatcttt tatttgagac tgcttgagga angagtaaat caggcaatat ggtgggaact
+     4801 agccttagat taaactataa aatagattac tgtcaatttt gagatcctta aatgattgtc
+     4861 aaaaatttga aaagtagcat aaaggcagtg ggagttttca tgtagaaatt ctttttttaa
+     4921 gagattatca ttattaatgt gtcctataga aaaacaaatg taattgtggt atacacagca
+     4981 aaataggcga gcgagctact ggagcagaac ctccaggtaa aaaatgaggt gagtgatgat
+     5041 gagctacagc ttatgacgtc agtagttgag antttatata accctgcata ctatatattg
+     5101 tagtcgtaca tttattgtgt aaaaaagaaa ctttatttaa tccatgacca tctattattt
+     5161 atatattttc cttgcttctt tcttggtatt taggaaggag acaaacaact tataagggaa
+     5221 acatccacac atcaactgaa ttcagaacgc tatgttcata ctttcaagga tttatctaat
+     5281 ttctcaggag ccataaatgt cacctatcgc tacctagctg ccacaccttt acaaagaaag
+     5341 cgtaagtatc cttaaacatt taaataaaga atacataaaa tattttgcat taaaataatg
+     5401 atagtttcac atgtatagta aaaaggctta agggctttac taatataata aattatttgg
+     5461 gcaaaacttc aatgtttctt cacaaattgc caactactat actcactgac ccagtacact
+     5521 taataacaaa aaaattaaat aaaatgccta atcgtaatgt gagtctcttg agattttgtt
+     5581 gtaggnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn
+     5641 nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnn nnnnnaggtg ctatttattt
+     5701 ttcatagaaa atataaatta tgtattaagc acttacagcc tttatatatt tagcttatta
+     5761 ctttaatcat agaatgttct gtgcatagtc atttactaga tttacttaat atgtagtaag
+     5821 tagcaagtca aaggaataaa tatcttctct cttttacttt ttccatattt ctagttcaca
+     5881 tttgtattgc ttctgaattc ttttttgcag ggtatcttac aattggactt tcttcagtaa
+     5941 agcgaaaaaa aggaaactat ttacttgaga caattaagtc aatttttgag caatccagct
+     6001 atgaagagct gaaggaaatt tcagtggtgg ttcacctagc agactttaat tcttcctggc
+     6061 gtgatgccat ggtccaggat attacacaga aatttgcgca ccatattatt gcaggaagat
+     6121 taatggttat acatgctcca gaggagtatt acccaatcct agatggcctt aaaagaaatt
+     6181 acaatgatcc agaagataga gtcaaatttc gttccaagca aaatgtagat tatgcttttc
+     6241 tgcttaattt ttgtgccaat acttcagact attatgtaat gcttgaagat gatgttcgat
+     6301 gttcanaaaa tttcttaact gccatcaaga aagtcattgc atccctagaa ggaacttact
+     6361 gggtaactct tgaattctct aagcttggct acattggtaa actctatcat tctcatgatc
+     6421 tcccacgttt ggcccatttt ttattaatgt tttatcaaga aatgccttgt gattggctat
+     6481 tgactcattt ccgtggtctg ttggctcaga aaaatgtgat ccgttttaaa ccatctctct
+     6541 ttcagcacat gggctattat tcatcataca aagggacgga gaataagctg aaggatgatg
+     6601 attttgaaga ggagtcattt gacattcctg ataacccccc tgcaagtctg tacaccaaca
+     6661 tgaatgtgtt tgaaaattat gaagcaagca aggcttacag tagtgttgat gagtactttt
+     6721 gggggaaacc accttcaaca ggagatgttt ttgtgattgt atttgaaaat ccaattataa
+     6781 taaaaaaaat taaagtaaat actggaacag aagatcggca aaatgatatt ttgcatcatg
+     6841 gagccctaga tgttggggaa aacgttatgc ctagcaaaca aaggagacaa tgttctactt
+     6901 acttaagact aggagaattc aaaaatggaa actttgaaat gtcaggtgta aatcaaaaaa
+     6961 ttccatttga tatacattgt atgaggatat atgtcaccaa aacacaaaag gaatggctaa
+     7021 ttattaggag tattagcatt tggacttctt agccaattaa atcagtatgt tcagtttctg
+     7081 aagcagttct tcctgcttcg tcttttgcta cctttgtctt ttggagggaa agcaatggat
+     7141 gggatatgtt aaaagaaaca ttaattacat tggcagtttt catttataca ttgttgacat
+     7201 aattttactc ttaatacaca cttgtattta ttttaacgtc tgaagttgaa tatcagtcta
+     7261 tagctaatgc tactttcatt tatattttta aatgttctta gttttaaaat ttcaactgat
+     7321 tgtcgaaagg gtaatatgaa agattttaaa tgaaaaaaat ttgttggatg atgatttttg
+     7381 aaaaatagtc accaactgta tatacttcct caagaactga taattcatta tatcatcaga
+     7441 tagcttttat taagcatctg tgggaatata cagttgggtg gaatgataat ctggtttatt
+     7501 ttttctgtaa acttaagttt ccgttgactt ctgtacatct acaatgaata cctcctcata
+     7561 gaagtggtgt ctttacataa ttttttgtgt aggtgacact atggaaaaag aaaaaaaaga
+     7621 cttaaaaata tctctcccct gattatttat atgaaagggg atattgttca ttgtttaaaa
+     7681 acatttaatt gagcacctat tgttgataaa ttttctgggg gaagcagtct ttttcaagtt
+     7741 tcccttttga aaaaaaaaaa gaagagttaa gctcaatatt ttcaggttac attgagtacc
+     7801 cacatttaat agaataaatt agggaaggcc tatagtagtt agctcattcg tacagacatt
+     7861 ttcagtatat gcagaaaatt tttggaaatt gattttatac attttgtatt aaaatccatg
+     7921 tgattgaaat tattgtgatt tatcatatac ctttttggaa tttaaatggg tatattataa
+     7981 aggagaaaag taagaaccat agaaattagt tgacttttct agaatcaaag atctatttcc
+     8041 tagcaaggcc agaatgagag atctgatatt ctgataacca gacaatgctc tttttctcg
+//
+
