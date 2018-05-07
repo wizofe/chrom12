@@ -302,5 +302,3 @@ if __name__ == "__main__":
         print(row)
 
     # print (fetch_one('Codon', ['Codon_id'], {'Codon': 'TGT', 'Amacid': 'Cys'}).get('Codon_id'))
-
-

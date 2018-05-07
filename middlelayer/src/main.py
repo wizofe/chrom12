@@ -1,11 +1,25 @@
-# Copyright (c) 2018, Ioannis Valasakis <code@wizofe.uk>
-# See the LICENSE.txt for licensing information
-#
-# Middle layer implementation of a Chromosome (12) Browser
-# MSc. Bioinformatics, Birkbeck & UCL - BioComputing II
-# Taught by: Dr. Andrew C.R. Martin. UCL
+"""
+This module describes the API of the Chromosome 12 Browser
+Implementation of the Browser as a Project of Biocomputing II
+
+For the MSc. Bioinformatics, in Birkbeck College & UCL
+Taught by: Dr. Andrew C.R. Martin, UCL
+
+Copyright (c) 2018, Ioannis Valasakis <code@wizofe.uk>
+See the LICENSE.txt for licensing information
+
+Version 0.1b Beta ('Making it work')
+
+Todo:
+    * one
+    * two
+
+For more information about the API see doc/documentation.txt
+For the essay doc/essay.pdf
+"""
 
 import unittest
+import dbconnection
 
 class TestMainFunction(unittest.TestCase):
     """ Tests for the main function
