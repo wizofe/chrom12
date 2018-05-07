@@ -267,7 +267,7 @@ def getCDS():
 
 def getCodonUsage(acno):
     
-    """Fetches condon usage per entry by accession number from the database
+    """Fetches codon usage per entry by accession number from the database
        args: none
        return: row (tuple) with values of Amacid, Codon, Number, per1000, Fraction for that entry
     """
@@ -286,7 +286,7 @@ def getCodonUsage(acno):
 
 
 def getCodonUsage_chrom():
-    """Fetches condon usage information of chromosome 12 from database 
+    """Fetches codon usage information of chromosome 12 from database 
        args: none
        return: row (tuple) with values of Amacid, Codon, Number, per1000, Fraction
     """
