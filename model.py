@@ -4,8 +4,8 @@
 Program: model
 File: model.py
 
-Version: V1.0
-Date: 04.05.18
+Version: V2.0
+Date: 06.05.18
 Copyright (c) 2018, Jenny Su, Birkbeck, 2018
 Author: Jenny Su
 See the LICENSE.txt for licensing information
@@ -20,6 +20,9 @@ This program contains models for database tables construction and is used by Gen
 Each model maps to a single database table and contains fields and behaviors of the data being stored.  
 
 Usage: Genbank_parser.py
+
+Revision History
+V1.0 04.05.18
 
 """
 #****************************************************************
@@ -63,13 +66,14 @@ codonuage_per_chrom_columns = [
 ]
 
 codonusage_per_entry_columns = [
-    ("Accession_No", "VARCHAR(20) PRIMARY KEY"),
-    ("Amacid", "CHAR(3)"),
-    ("Codon", "CHAR(6)"),
+    ("Accession_No", "VARCHAR(20)"),
+    ("Amacid", "CHAR(6)"),
+    ("Codon", "CHAR(3)"),
     ("Number", "INT"),
     ("per1000", "Decimal"),
     ("Fraction", "Decimal"),
     ("Codon_id", "INT"),
+    ("CodonUsage_entry_id", "INT PRIMARY KEY AUTO_INCREMENT"),
     ("FOREIGN KEY(Accession_No)", "REFERENCES Protein(Accession_No)"),
     ("FOREIGN KEY(Codon_id)", "REFERENCES Codon(Codon_id)"),
 
