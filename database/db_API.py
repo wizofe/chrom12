@@ -98,6 +98,7 @@ def insert_row(table_name, columns, values):
         cursor.execute(sql)
         connection.commit()
 
+    except pymysql.err.IntegrityError:
     except database.dbconnection.database.dbconnection.pymysql.err.IntegrityError:
         pass
 
@@ -105,6 +106,11 @@ def insert_row(table_name, columns, values):
 
 
 def fetch_one(table_name, select_columns, where_dict):
+    """this function is used by Genbank_parser.py to fectch information from specfic column of a table 
+    by mapping information from else where with other columns in the table.
+    return: retrieved info by row
+    """
+    
     connection = dbconnection.getdbconnection()
 
     sql = 'SELECT %s FROM %s WHERE ' % (", ".join(select_columns), table_name)
@@ -131,7 +137,7 @@ def fetch_one(table_name, select_columns, where_dict):
 def getGene_all():
     
     """Fetches gene information from the database
-       args:nome
+       args:none
        return: row (tuple) with values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence
     """
     
@@ -260,14 +266,15 @@ def getCDS():
 
 
 
-def getCodonUsage():
+def getCodonUsage(acno):
     
-    """Fetches condon usage per entry by accession number from the database
+    """Fetches codon usage per entry by accession number from the database
        args: none
-       return: row (tuple) with values of Amacid, Codon, Number, per1000, Fraction for the that entry
+       return: row (tuple) with values of Amacid, Codon, Number, per1000, Fraction for that entry
     """
     connection = dbconnection.getdbconnection()
-    sql = 'SELECT Accession_No, Amacid, Codon, Number, per1000, Fraction from CodonUsage_per_Entry'
+    sql = 'SELECT Accession_No, Amacid, Codon, Number, per1000, Fraction from CodonUsage_per_Entry' \
+          'WHERE Accession_No = "%s"' % acno
     cursor = connection.cursor()
     cursor.execute(sql)
 

@@ -1,0 +1,100 @@
+Code documentation (Database and Data access routines)
+Author: Jenny Su
+
+Genbank_parser.py
+This module extracts relevant information from Genbank file and uses functions from db_API.py and database tables format from model.py to build a MySQL database, chromdb. 
+
+Main Function:
+•	main(geneBank_file):
+Reads the GenBank file.
+Parses accession number, gene identifier, chromosomal location, organism, sequence length, DNA sequence, CDS sequence, protein id, protein name, amino acid sequence, Gets the CDS start and end positions and calculated codon usage information
+Creates database, tables and indexes using functions from db_API.py
+Inserts the above extracted information into the relevant tables and columns in the database according to the models from model.py
+Other functions:
+
+•	parse_cdsIndexString(string):
+parses the CDS positions from string and stores them in a list
+
+
+•	get_min_max(li_of_lis):
+filter and extract the CDS start and end positions (items) from the list
+
+
+•	get_codonUsageResults(cds_sequence):
+counts cds_sequence, performs calculations of codon frequencies and return codon usage information including number of codons, frequency of each codon type and frequencies of synonymous codons.  
+
+
+db_API.py
+Functions used by Genbank_parser.py to build ‘chromdb’ MySQL database: 
+
+•	create_tables (table_names, columns_data_list):
+table_names: from tables list in model.py
+columns_data_list: from columns_info list in model.py
+Creates tables and columns in the MySQL database. 
+
+•	create_indexes(indexes_info): 
+indexes_info: from index_info dictionary in the model.py
+Creates indexes for the databse.
+
+•	insert_row (table_name, columns, values):
+table_name: specific table containing the columns
+columns: specific columns that the data is being inserted to 
+values: data to be inserted
+Inserts data by row into specific columns of a table. 
+
+•	fetch_one (table_name, select_columns, where_dict):
+In Genbank_parser, this function has been used to fetch Codon_id from Codon table by mapping the codon usage information with the amino acid and codon information in the table, so that later the corresponding Codon_id is correctly inserted into the CodonUsage_per_chrom table and CodonUsage_per_Entry table.  
+
+
+Functions to be used by middle layer to retrieve data:
+
+•	getGene_all():
+Retrieves all relevant gene information from Gene table in the chromdb database.
+Returns data of accession number, gene identifier, chromosomal location, organism, sequence length and DNA sequence.
+
+•	getGene_acno (acno):
+Retrieves all relevant gene information from Gene table in the chromdb database by accession number inputted from middle layer.
+
+•	getGene_gi (gene_identifier):
+Retrieves all relevant gene information from Gene table in the chromdb database by gene identifier inputted from middle layer. 
+Some gene identifiers are missing in the original genbank file. Therefore, if input values are not in the database, function will not be able to return data.   
+
+•	getProtein_all():
+Retrieves all relevant protein information from Protein table in the chromdb database.
+Returns data of accession number, protein id, protein name, amino acid sequence.
+
+•	getProinfo_acno(acno):
+Retrieves all relevant protein information from Protein table in the chromdb database by accession number inputted from middle layer.
+
+•	getProinfo_name(protein_name):
+Retrieves all relevant protein information from Protein table in the chromdb database by protein name inputted from middle layer. 
+Some protein names are missing in the original genbank file. Therefore, if input values are not in the database, function will not be able to return data.   
+
+•	getCDS():
+Fetches all CDS information from Gene table in the database. 
+Returns data of accession number, gene identifier, cds start position, cds end position and cds sequence.
+
+•	getCodonUsage(acno):
+Retrieves all codon usage per entry information from database by accession number inputted from middle layer. 
+It will return with data of amino acid, codon, number of codon, per1000, fraction for that entry. 
+
+per1000: average frequency of a specific codon is used per 1000 codons
+fraction: the abundance of this codon relative to all of the codons for that specific amino acid.
+
+•	getCodonUsage_chrom():
+Retrieves all codon usage information of the whole chromosome from the database.
+It will return with data of amino acid, codon, number of codon, per1000 and fraction
+
+
+db_connection.py
+This utility module connects to the host server first, creates a database and then establishes a connection to the database. 
+Function:
+getdbconnection():
+will return a connection to the database and if there is error in connection, it will suspend the execution for 10 seconds.  
+
+model.py 
+This module defines the structure of the database and contains tables, columns, primary key, foreign key and data type information. 
+It is used by Genbank_parser.py to create ‘chromdb’ MySQL database. 
+
+
+
