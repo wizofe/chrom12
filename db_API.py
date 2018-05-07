@@ -131,7 +131,7 @@ def fetch_one(table_name, select_columns, where_dict):
 def getGene_all():
     
     """Fetches gene information from the database
-       args:nome
+       args:none
        return: row (tuple) with values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence
     """
     
