@@ -7,4 +7,5 @@ chrom_CDS_18
 __pycache__/*
 venv/*
 .virtualenv/*
+.DS_Store
 
