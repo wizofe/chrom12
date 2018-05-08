@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
   /*--************************************************************************************************
   * project: Genome browse for chromosome-12                                                         *
   * file:main.css                                                                                    *
@@ -8,11 +11,16 @@
   * Licence:See the LICENSE.txt for licensing information                                            *
   * Author: Abdulvahab Kharadi                                                                       *
   * ***********************************************************************************************-*/
+>>>>>>> master
   body{
   color:#660099;
   text-align: center;
   background-size:cover;
+<<<<<<< HEAD
+  background-color: rgba(255,255,255,0.7);
+=======
   background-color: rgba(255,255,255,0.7); /*help to correctly set param of BackgroundImage*/
+>>>>>>> master
   background-blend-mode: lighten;
   background-image: url('http://localhost/chrom12/frontend/src/img/chromo1.jpg');
   background-repeat: no-repeat;
@@ -35,7 +43,11 @@
    overflow: hidden;
    display: block;
    position: relative;
+<<<<<<< HEAD
+   padding-bottom: 100px; /* height of your footer */
+=======
    padding-bottom: 100px; /* height of  footer */
+>>>>>>> master
   }
 
   .footer {

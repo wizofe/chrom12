@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+<<<<<<< HEAD
+=======
 """*************************************************************************************************
 * project: Genome browse for chromosome-12                                                         *
 * file:get_result.py                                                                               *
@@ -8,6 +10,7 @@
 * Licence:See the LICENSE.txt for licensing information                                            *
 * Author: Abdulvahab Kharadi                                                                       *
 * ***********************************************************************************************"""
+>>>>>>> master
 from middlelayer import vari
 import json
 import cgi
