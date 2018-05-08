@@ -59,24 +59,23 @@ codonuage_per_chrom_columns = [
     ("Amacid", "CHAR(6)"),
     ("Codon", "CHAR(3)"),
     ("Number", "INT"),
-    ("per1000", "Decimal"),
-    ("Fraction", "Decimal"),
+    ("per1000", "Decimal(10, 5)"),
+    ("Fraction", "Decimal(10,5)"),
     ("Codon_id", "INT"),
     ("FOREIGN KEY(Codon_id)", "REFERENCES Codon(Codon_id)")
 ]
 
 codonusage_per_entry_columns = [
-    ("Accession_No", "VARCHAR(20)"),
-    ("Amacid", "CHAR(6)"),
-    ("Codon", "CHAR(3)"),
-    ("Number", "INT"),
-    ("per1000", "Decimal"),
-    ("Fraction", "Decimal"),
-    ("Codon_id", "INT"),
     ("CodonUsage_entry_id", "INT PRIMARY KEY AUTO_INCREMENT"),
+    ("Accession_No", "VARCHAR(20)"),
+    ("Amacid", "CHAR(3)"),
+    ("Codon", "CHAR(6)"),
+    ("Number", "INT"),
+    ("per1000", "Decimal(10,5)"),
+    ("Fraction", "Decimal(10,5)"),
+    ("Codon_id", "INT"),
     ("FOREIGN KEY(Accession_No)", "REFERENCES Protein(Accession_No)"),
-    ("FOREIGN KEY(Codon_id)", "REFERENCES Codon(Codon_id)"),
-
+    ("FOREIGN KEY(Codon_id)", "REFERENCES Codon(Codon_id)")
 ]
 
 index_info = {
@@ -87,6 +86,3 @@ index_info = {
 
 tables = ['Gene', 'Protein', 'Codon', 'CodonUsage_per_chrom', 'CodonUsage_per_Entry']
 columns_info = [gene_columns, protein_columns, codon_columns, codonuage_per_chrom_columns, codonusage_per_entry_columns]
-
-
-

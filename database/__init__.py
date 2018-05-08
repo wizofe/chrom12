@@ -1,1 +1,6 @@
 __author__ = "Jenny Su"
+__copyright__ = "Copyright 2018"
+__license__ = "GPL"
+__version__ = "0.1b"
+__email__ = "jsu01@mail.bbk.ac.uk"
+__status__ = "Development"

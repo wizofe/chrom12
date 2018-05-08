@@ -3,28 +3,24 @@
 """
 Program: Genbank_parser
 File: Genbank_parser.py
-
-Version: V2.0
-Date: 06.05.18
+Version: V3.0
+Date: 07.05.18
 Function: Obtain relevent Genbank information and build a MySQL database  
 Copyright (c) 2018, Jenny Su, Birkbeck, 2018
 Author: Jenny Su
 See the LICENSE.txt for licensing information
-
 Database tier of implementation of a Chromosome (12) Browser
 MSc. Bioinformatics, Birkbeck & UCL - BioComputing II
 Taught by: Dr. Andrew C.R. Martin. UCL
-
 Description:
 ============
 This program extracts relevent information from Genbank file and uses functions from db_API.py and database tables format from model.py
 to build a MySQL database 
-
 Usage: Genbank file
 
 Revision History:
 V1.0   01.05.18
-
+v2.0   06.05.18
 """
 #****************************************************************
 #Import libraries
@@ -35,10 +31,6 @@ import re
 import json
 
 import model
-import csv
-import re
-
-from database import model
 import db_API
 
 #*****************************************************************
@@ -94,14 +86,14 @@ def get_codonUsageResults(cds_sequence):
         for codon in Amacid_Codon.get(amacid):
             number_codons = cds_sequence.count(codon.lower())
 
-            _1000 = float(number_codons)*3/number_residues * 1000
+            _1000 = round(float(number_codons)*3/number_residues * 1000, 4)
 
             amacid_codon_number += number_codons
 
             amacid_results.append([amacid, codon, number_codons, _1000])
 
         if amacid_codon_number > 0:
-            [x.append(float(x[2])/amacid_codon_number) for x in amacid_results]
+            [x.append(round(float(x[2])/amacid_codon_number, 4)) for x in amacid_results]
             results.extend(amacid_results)
 
     return results
@@ -177,26 +169,11 @@ def main(geneBank_file):
 
             db_API.insert_row('Gene', [x[0] for x in model.gene_columns], gene_row)
             # write_csvRow(gene_csv, gene_row, 'a')
-            
 
 
-#    Values for database insertion into CodonUsage_per_entry table
-
-        codonUsageResults = get_codonUsageResults(cds_sequence)
-        for accession_no in accession_nos:
-            
-            for codonUsageResult in codonUsageResults:
-                codon_id = db_API.fetch_one(
-                    'Codon', ['Codon_id'], {'Codon': codonUsageResult[1], 'Amacid': codonUsageResult[0]}).get('Codon_id')
-                db_API.insert_row(
-                    "CodonUsage_per_Entry", [x[0] for x in model.codonusage_per_entry_columns[:7]],
-                    [accession_no]+codonUsageResult+[codon_id])
-                # write_csvRow(codonUsageResult_csv, [accession_no]+codonUsageResult, 'a')
-                    
                 
 #   Values for database insertion into Protein table: 
 #    accession_no, protein_id, protein_name, amino_acid_sequence
-
 
         if '/protein_id=' in block:
             protein_id = re.search(r'/protein_id=\"(.+)\"', block).group(1).strip()
@@ -222,22 +199,41 @@ def main(geneBank_file):
             # write_csvRow(protein_csv, protein_row, 'a')
 
         allCds_sequence += cds_sequence + ' '
+            
 
+
+#    Values for database insertion into CodonUsage_per_entry table
+
+        codonUsageResults = get_codonUsageResults(cds_sequence)
+        for accession_no in accession_nos:
+            
+            for codonUsageResult in codonUsageResults:
+                codon_id = db_API.fetch_one(
+                    'Codon', ['Codon_id'], {'Codon': codonUsageResult[1], 'Amacid': codonUsageResult[0]}).get('Codon_id')
+                db_API.insert_row(
+                    "CodonUsage_per_Entry", [x[0] for x in model.codonusage_per_entry_columns[1:8]],
+                    [accession_no]+codonUsageResult+[codon_id])
+                    
+                # write_csvRow(codonUsageResult_csv, [accession_no]+codonUsageResult, 'a')
+                    
 
 #   Values for database insertion into CodonUsage_per_chromosome table
 
-    index = 0
+    # index = 0
     allCodonUsageResults = get_codonUsageResults(allCds_sequence)
     for result in allCodonUsageResults:
-        index += 1
+        # index += 1
         codon_id = db_API.fetch_one('Codon', ['Codon_id'], {'Codon': result[1], 'Amacid': result[0]}).get('Codon_id')
         db_API.insert_row(
-            "CodonUsage_per_chrom", [x[0] for x in model.codonuage_per_chrom_columns[:-1]], [index] + result + [codon_id])
+            "CodonUsage_per_chrom", [x[0] for x in model.codonuage_per_chrom_columns[1:-1]], result+[codon_id])
         # write_csvRow(codonUsageResultPerWholeChromosome_csv, result, 'a')
+              
         
 
 if __name__ == "__main__":
     geneBank_file = "chrom_CDS_12"
+    # It would best to use testfile to test GenBank_parser.py
+    # Running the module with chrom_CDS_12 file would take over an hour to complete.
 
     Amacid_Codon = {'Ala': ['GCG', 'GCA', 'GCT', 'GCC'],
                     'Cys': ['TGT', 'TGC'],
@@ -326,3 +322,4 @@ if __name__ == "__main__":
 
 
     main(geneBank_file)
+
