@@ -307,5 +307,3 @@ def getCodonUsage_chrom():
 if __name__ == "__main__":
     for row in getCodonUsage_chrom():
         print(row)
-
-    # print (fetch_one('Codon', ['Codon_id'], {'Codon': 'TGT', 'Amacid': 'Cys'}).get('Codon_id'))
