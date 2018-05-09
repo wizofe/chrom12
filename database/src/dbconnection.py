@@ -32,27 +32,29 @@ import pymysql.cursors
 
 #   Create a connection object. Parameters can be changed to suit user
 
-dbserver = 'localhost'  # IP address of the MySQL database server
-dbuser = 'root'         # User name of the databaseserver
-dbpass = ''         # Password for the database user
+dbserver = 'hope'          # IP address of the MySQL database server
+dbuser =   'sj004'         # User name of the databaseserver
+dbpass =   'sj004'         # Password for the database user
 
-newdbname = 'chromdb'   # Name of the database that is to be created
+newdbname = 'sj004'   # Name of the database that is to be created
 charset = 'utf8mb4'     # Character set
 cursortype = pymysql.cursors.DictCursor
 
-
+# For bbk student account,  we dont have access privilege to create new database on Hope server,
+# so, we will create tables in existing user database
+# For user wanting to create database on to another server, the followiing script can be enable and executed.  
 #   Connect to the server
-server = pymysql.connect(host=dbserver,
-                         user=dbuser,
-                         password=dbpass,
-                         charset=charset,
-                         cursorclass=cursortype
-                         )
+#server = pymysql.connect(host=dbserver,
+                         #user=dbuser,
+                         #password=dbpass,
+                         #charset=charset,
+                         #cursorclass=cursortype
+                         #)
 
 #   Create the database
-sql_statement = 'CREATE DATABASE IF NOT EXISTS ' + newdbname
-cursor = server.cursor()
-cursor.execute(sql_statement)
+#sql_statement = 'CREATE DATABASE IF NOT EXISTS ' + newdbname
+#cursor = server.cursor()
+#cursor.execute(sql_statement)
 
 
 def getdbconnection():
@@ -62,6 +64,7 @@ def getdbconnection():
     while True:
         try:
             connection = pymysql.connect(host=dbserver,
+                                         port=3306,
                                          user=dbuser,
                                          password=dbpass,
                                          db=newdbname,
