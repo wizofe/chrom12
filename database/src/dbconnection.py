@@ -17,13 +17,13 @@ Taught by: Dr. Andrew C.R. Martin. UCL
 
 Description:
 ============
-This program connects to MySQL database from Python using PyMySQL Connector/Python API and is used by Genbank.parser.py
+This program connects to MySQL database from Python using PyMySQL Connector/Python API and is used by Genbank_parser_db.py
 to establish connection. 
 
-Usage: for Genbank_parser.py
+Usage: for Genbank_parser_db.py
 
 """
-#****************************************************************
+#*********************************************************************************************************************
 #Import libraries
 import time
 import pymysql
@@ -36,26 +36,33 @@ dbserver = 'hope'          # IP address of the MySQL database server
 dbuser =   'sj004'         # User name of the databaseserver
 dbpass =   'sj004'         # Password for the database user
 
-newdbname = 'sj004'   # Name of the database that is to be created
-charset = 'utf8mb4'     # Character set
+newdbname = 'sj004'        # Name of the database that is to be created
+charset = 'utf8mb4'        # Character set
 cursortype = pymysql.cursors.DictCursor
 
-# For bbk student account,  we dont have access privilege to create new database on Hope server,
-# so, we will create tables in existing user database
-# For user wanting to create database on to another server, the followiing script can be enable and executed.  
+"""
+************************************************************************************************************
+Birkbeck student account does not have access privilege to create new database on Hope server, but can create
+tables in existing user database. 
+
+For user wanting to create new database on to another server, the followiing script can help user create database. 
+
 #   Connect to the server
-#server = pymysql.connect(host=dbserver,
-                         #user=dbuser,
-                         #password=dbpass,
-                         #charset=charset,
-                         #cursorclass=cursortype
-                         #)
 
-#   Create the database
-#sql_statement = 'CREATE DATABASE IF NOT EXISTS ' + newdbname
-#cursor = server.cursor()
-#cursor.execute(sql_statement)
+server = pymysql.connect(host=dbserver,
+                         user=dbuser,
+                         password=dbpass,
+                         charset=charset,
+                         cursorclass=cursortype
+                         )
 
+#   Create new database on the server
+sql_statement = 'CREATE DATABASE IF NOT EXISTS ' + newdbname
+cursor = server.cursor()
+cursor.execute(sql_statement)
+
+***********************************************************************************************************
+"""
 
 def getdbconnection():
     """ Function returns a database connection
