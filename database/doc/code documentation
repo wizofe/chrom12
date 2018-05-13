@@ -8,8 +8,10 @@ Main Function:
 •	main(geneBank_file):
 Reads the GenBank file.
 Parses accession number, gene identifier, chromosomal location, organism, sequence length, DNA sequence, CDS sequence, protein id, protein name, amino acid sequence, Gets the CDS start and end positions and calculated codon usage information
-Creates database, tables and indexes using functions from db_API.py
-Inserts the above extracted information into the relevant tables and columns in the database according to the models from model.py
+Creates database, tables and indexes using functions from db_create.py
+Inserts the above extracted information into the relevant tables and columns into the database according to the models from model.py
+
+
 Other functions:
 
 •	parse_cdsIndexString(string):
