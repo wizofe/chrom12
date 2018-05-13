@@ -164,16 +164,18 @@ def getProinfo_name(protein_name):
     
     connection.close()
 
-
+    
 
 def getCDS():
     
-    """Fetches CDS information from the database
+    """Fetches CDS information join with protein id from the database
        args: none
-       return: row (tuple) with values of Accession_No, Gene_Identifier,CDS_start, CDS_end, CDS_Sequence
+       return: row (tuple) with values of Accession_No, Gene_Identifier,CDS_start, CDS_end, CDS_Sequence, Protein_id
     """
     connection = dbconnection.getdbconnection()
-    sql = 'SELECT Accession_No, Gene_Identifier,CDS_start, CDS_end, CDS_Sequence FROM Gene'
+    sql = 'SELECT g.Accession_No, g.Gene_Identifier, g.CDS_start, g.CDS_end, g.CDS_Sequence, p.Protein_id '\
+          'FROM Gene g, Protein p '\
+          'WHERE g.Accession_No = p.Accession_No'
     cursor = connection.cursor()
     cursor.execute(sql)
 
