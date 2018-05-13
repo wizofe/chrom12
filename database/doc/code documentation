@@ -1,8 +1,8 @@
 Code documentation (Database and Data access routines)
 Author: Jenny Su
 
-Genbank_parser.py
-This module extracts relevant information from Genbank file and uses functions from db_API.py and database tables format from model.py to build a MySQL database, chromdb. 
+Genbank_parser_db.py
+This module extracts relevant information from Genbank file and uses functions from db_create.py and database tables format from model.py to build a MySQL database, chromdb. 
 
 Main Function:
 •	main(geneBank_file):
@@ -24,8 +24,8 @@ filter and extract the CDS start and end positions (items) from the list
 counts cds_sequence, performs calculations of codon frequencies and return codon usage information including number of codons, frequency of each codon type and frequencies of synonymous codons.  
 
 
-db_API.py
-Functions used by Genbank_parser.py to build ‘chromdb’ MySQL database: 
+db_create.py
+Functions used by Genbank_parser_db.py to build ‘chrom12’ MySQL database: 
 
 •	create_tables (table_names, columns_data_list):
 table_names: from tables list in model.py
@@ -43,14 +43,19 @@ values: data to be inserted
 Inserts data by row into specific columns of a table. 
 
 •	fetch_one (table_name, select_columns, where_dict):
-In Genbank_parser, this function has been used to fetch Codon_id from Codon table by mapping the codon usage information with the amino acid and codon information in the table, so that later the corresponding Codon_id is correctly inserted into the CodonUsage_per_chrom table and CodonUsage_per_Entry table.  
+In Genbank_parser_db.py, this function has been used to fetch Codon_id from Codon table by mapping the codon usage information with the amino acid and codon information in the table, so that later the corresponding Codon_id is correctly inserted into the CodonUsage_per_chrom table and CodonUsage_per_Entry table.  
 
 
+db_API.py
 Functions to be used by middle layer to retrieve data:
 
 •	getGene_all():
 Retrieves all relevant gene information from Gene table in the chromdb database.
 Returns data of accession number, gene identifier, chromosomal location, organism, sequence length and DNA sequence.
+
+•	getGene_proteinid():
+Fetches gene information from Gene table and protein id from protein table in the database.
+Returns with rows of values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence, Protein_id
 
 •	getGene_acno (acno):
 Retrieves all relevant gene information from Gene table in the chromdb database by accession number inputted from middle layer.
@@ -87,14 +92,16 @@ It will return with data of amino acid, codon, number of codon, per1000 and frac
 
 
 db_connection.py
-This utility module connects to the host server first, creates a database and then establishes a connection to the database. 
+This utility module has two options: 
+(1)connects to the host server first, creates a database and then establishes a connection to the database (currently being muted, but can be enabled)
+(2)connects to existing student user database on Hope server (default)
 Function:
 getdbconnection():
 will return a connection to the database and if there is error in connection, it will suspend the execution for 10 seconds.  
 
 model.py 
 This module defines the structure of the database and contains tables, columns, primary key, foreign key and data type information. 
-It is used by Genbank_parser.py to create ‘chromdb’ MySQL database. 
+It is used by Genbank_parser_db.py to create ‘chrom12’ MySQL database. 
 
 
 
