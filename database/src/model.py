@@ -33,7 +33,7 @@ gene_columns = [
     ("Chromosomal_location", "VARCHAR(200)"),
     ("Organism", "VARCHAR(20)"),
     ("Sequence_Length", "INT"),
-    ("DNA_Sequence", "LONGBLOB"),
+    ("DNA_Sequence", "LONGTEXT"),
     ("CDS_start", "INT"),
     ("CDS_end", "INT"),
     ("CDS_sequence", "TEXT")
