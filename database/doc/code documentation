@@ -52,29 +52,29 @@ db_API.py
 Functions to be used by middle layer to retrieve data:
 
 •	getGene_all():
-Retrieves all relevant gene information from Gene table in the chromdb database.
+Retrieves all relevant gene information from Gene table in the chrom12 database.
 Returns data of accession number, gene identifier, chromosomal location, organism, sequence length and DNA sequence.
 
 •	getGene_proteinid():
 Fetches gene information from Gene table and protein id from protein table in the database.
-Returns with rows of values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence, Protein_id
+Returns with rows as dictionary of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence, Protein_id
 
 •	getGene_acno (acno):
-Retrieves all relevant gene information from Gene table in the chromdb database by accession number inputted from middle layer.
+Retrieves all relevant gene information from Gene table in the chrom12 database by accession number inputted from middle layer.
 
 •	getGene_gi (gene_identifier):
-Retrieves all relevant gene information from Gene table in the chromdb database by gene identifier inputted from middle layer. 
+Retrieves all relevant gene information from Gene table in the chrom12 database by gene identifier inputted from middle layer. 
 Some gene identifiers are missing in the original genbank file. Therefore, if input values are not in the database, function will not be able to return data.   
 
 •	getProtein_all():
-Retrieves all relevant protein information from Protein table in the chromdb database.
-Returns data of accession number, protein id, protein name, amino acid sequence.
+Retrieves all relevant protein information from Protein table and CDS sequence from Gene table in the database.
+Returns data of accession number, protein id, protein name, amino acid sequence, CDS sequence.
 
 •	getProinfo_acno(acno):
-Retrieves all relevant protein information from Protein table in the chromdb database by accession number inputted from middle layer.
+Retrieves all relevant protein information from Protein table in the chrom12 database by accession number inputted from middle layer.
 
 •	getProinfo_name(protein_name):
-Retrieves all relevant protein information from Protein table in the chromdb database by protein name inputted from middle layer. 
+Retrieves all relevant protein information from Protein table in the chrom12 database by protein name inputted from middle layer. 
 Some protein names are missing in the original genbank file. Therefore, if input values are not in the database, function will not be able to return data.   
 
 •	getCDS():
