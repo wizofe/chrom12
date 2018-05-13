@@ -36,7 +36,7 @@ import dbconnection
 def getGene_all():
     
     """Fetches gene information from the database
-       args:nome
+       args:none
        return: row (tuple) with values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence
     """
     
@@ -48,12 +48,32 @@ def getGene_all():
         yield row
 
     connection.close()
+
+def getGene_proteinid():
+    
+    """Fetches gene information from Gene table and protein id from protein table in the database
+       args:none
+       return: row (tuple of strings) with values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length,
+       DNA_Sequence, Protein_id
+    """
+    
+    connection = dbconnection.getdbconnection()
+    sql = 'SELECT g.Accession_No, g.Gene_Identifier, g.Chromosomal_Location, g.Organism, g.Sequence_Length, g.DNA_Sequence, p.Protein_id '\
+          'FROM Gene g, Protein p '\
+          'WHERE g.Accession_No = p.Accession_No'
+    cursor = connection.cursor()
+    cursor.execute(sql)
+    for row in cursor.fetchall():
+        yield row
+
+    connection.close() 
     
 
 def getGene_acno(acno):
     
     """
     Fetches gene information from the database by their accession number
+    args: acno (from user input)
     return: row (tuple) with values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence
     """    
     connection = dbconnection.getdbconnection()
@@ -73,6 +93,7 @@ def getGene_gi(gene_identifier):
     
     """
     Fetches gene information from the database by gene identifier
+    args: gene_identifier (from user input)
     return: row (tuple) with values of Accession_No, Gene_Identifier, Chromosomal_Location, Organism, Sequence_Length, DNA_Sequence
     """
     connection = dbconnection.getdbconnection()
@@ -93,7 +114,7 @@ def getProtein_all():
     
     """Fetches protein information from the database
     args: none
-    return: row (tuple) with values of accession_No, Protein_id, Protein_name, Amino_acid_sequence
+    return: row (tuple of strings ) with values of accession_No, Protein_id, Protein_name, Amino_acid_sequence
     """
     connection = dbconnection.getdbconnection()
     sql = 'SELECT Accession_No, Protein_id, Protein_name, Amino_acid_sequence from Protein'
@@ -110,7 +131,8 @@ def getProtein_all():
 def getProinfo_acno(acno):
     
     """Fetches protein information from the database by Accession_No
-        return: row (tuple) with values of accession_No, Protein_id, Protein_name, Amino_acid_sequence
+       args: acno (from user input)
+       return: row (tuple) with values of accession_No, Protein_id, Protein_name, Amino_acid_sequence
     """
     connection = dbconnection.getdbconnection()
     sql = 'SELECT Accession_No, Protein_id, Protein_name, Amino_acid_sequence from Protein WHERE Accession_No = "%s"' % acno
@@ -128,6 +150,7 @@ def getProinfo_acno(acno):
 def getProinfo_name(protein_name):
     
     """Fetches protein information from the database by protein name
+       args: protein_name (from user input)
        return: row (tuple) with values of accession_No, Protein_id, Protein_name, Amino_acid_sequence
     """
     connection = dbconnection.getdbconnection()
@@ -165,7 +188,7 @@ def getCDS():
 def getCodonUsage(acno):
     
     """Fetches condon usage per entry by accession number from the database
-       args: none
+       args: acno (accession number from user input)
        return: row (tuple) with values of Amacid, Codon, Number, per1000, Fraction for the that entry
     """
     connection = dbconnection.getdbconnection()
