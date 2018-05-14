@@ -110,14 +110,18 @@ def getGene_gi(gene_identifier):
 
 
 
+
+
 def getProtein_all():
     
-    """Fetches protein information from the database
+    """Fetches protein information from Protein table and cds sequence from Gene table in the database
     args: none
-    return: rows (tuple of dictionaries) as dictionary of accession_No, Protein_id, Protein_name, Amino_acid_sequence
+    return: row (tuple) with values of Accession_No, Protein_id, Protein_name, Amino_acid_sequence, CDS_sequence
     """
     connection = dbconnection.getdbconnection()
-    sql = 'SELECT Accession_No, Protein_id, Protein_name, Amino_acid_sequence from Protein'
+    sql = 'SELECT p.Accession_No, p.Protein_id, p.Protein_name, p.Amino_acid_sequence, g.CDS_Sequence '\
+          'FROM Protein p, Gene g '\
+          'WHERE p.Accession_No = g.Accession_No'
     cursor = connection.cursor()
     cursor.execute(sql)
 
@@ -126,6 +130,7 @@ def getProtein_all():
 
     
     connection.close()
+    
     
 
 def getProinfo_acno(acno):
